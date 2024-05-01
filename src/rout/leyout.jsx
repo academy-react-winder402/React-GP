@@ -6,7 +6,7 @@ const Leyout = () => {
     return ( 
         <>
             <Header />
-            <Outlet />
+            {/* <Outlet /> */}
             <Footer />
         </>
      );
