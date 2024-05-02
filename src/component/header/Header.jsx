@@ -80,7 +80,7 @@ const Header = () => {
                 </div>  
             </div>
 
-            <div className='hidden xl:block'>
+            <div className='z-20 hidden xl:block'>
                 <div className='flex pt-3 h-[70px]'>
                     <h1 className="mr-[7%]"> BAHR ACADEMY </h1>
                     <div className="flex gap-[30px] mr-[50px] ">
