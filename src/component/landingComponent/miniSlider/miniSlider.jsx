@@ -19,7 +19,7 @@ const MiniSlider = () => {
                 <div className="mx-auto w-[1020px] justify-center mt-[50px] flex gap-[30px] mb-[30px]">
                     {slid.map((item) => {
                         return(
-                            <div className="shadow-[0px_0px_7px_2px_rgba(0,0,0,0.2)] py-[20px] rounded-3xl w-[310px] bg-slate-50">
+                            <div className="shadow-[0px_0px_7px_2px_rgba(0,0,0,0.2)] py-[20px] rounded-3xl w-[310px]">
                                 <img className="w-[270px] h-[170px]  mx-auto" src={item.src}/>
                                 <h2 className="text-center"> {item.fName} </h2>
                                 <p className="text-center"> {item.lName} </p>
