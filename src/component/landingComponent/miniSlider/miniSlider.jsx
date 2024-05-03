@@ -16,7 +16,7 @@ const MiniSlider = () => {
 
             <div className='hidden xl:block'>
                 <div className="text-3xl font-bold text-center mt-[50px]"> برترین مقالات </div>
-                <div className="h-[330px] mt-[50px] flex justify-center gap-[30px] mb-[200px]">
+                <div className="mx-auto w-[1020px] justify-center mt-[50px] flex gap-[30px] mb-[30px]">
                     {slid.map((item) => {
                         return(
                             <div className="shadow-[0px_0px_7px_2px_rgba(0,0,0,0.2)] py-[20px] rounded-3xl w-[310px] bg-slate-50">
@@ -26,6 +26,13 @@ const MiniSlider = () => {
                             </div>
                         )
                     })}
+                </div>
+                <div className='flex gap-1 justify-center mb-[150px]'>
+                    <div className='w-3 h-3 bg-blue-700 rounded-full hover:border-2 hover:border-blue-700'></div>
+                    <div className='w-3 h-3 bg-gray-300 rounded-full hover:border-2 hover:border-blue-700'></div>
+                    <div className='w-3 h-3 bg-gray-300 rounded-full hover:border-2 hover:border-blue-700'></div>
+                    <div className='w-3 h-3 bg-gray-300 rounded-full hover:border-2 hover:border-blue-700'></div>
+                    <div className='w-3 h-3 bg-gray-300 rounded-full hover:border-2 hover:border-blue-700'></div>
                 </div>
             </div>
 
