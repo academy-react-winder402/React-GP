@@ -80,15 +80,17 @@ const Header = () => {
                 </div>  
             </div>
 
-            <div className='z-20 hidden xl:block'>
+            <div className=' hidden xl:block'>
                 <div className='flex pt-3 h-[70px]'>
-                    <h1 className="mr-[7%]"> BAHR ACADEMY </h1>
-                    <div className="flex gap-[30px] mr-[50px] ">
-                        <NavLink to='/' className='w-[90px]'> صفحه اصلی </NavLink>
-                        <NavLink to='/courses'> دوره </NavLink>
-                        <NavLink> مقالات </NavLink>
-                        <NavLink> اساتید </NavLink>
-                        <NavLink className='w-[80px]'> ارتباط با ما </NavLink>
+                    <h1 className="mr-[7%] absolute z-20 text-white font-semibold text-lg"> BAHR ACADEMY </h1>
+                    <div className="mr-[250px] absolute z-20">
+                        <div className="flex gap-[30px] mr-[50px] ">
+                            <NavLink to='/' className='w-[90px] text-white'> صفحه اصلی </NavLink>
+                            <NavLink className="text-white" to='/courses'> دوره </NavLink>
+                            <NavLink className="text-white"> مقالات </NavLink>
+                            <NavLink className="text-white"> اساتید </NavLink>
+                            <NavLink className='w-[80px] text-white'> ارتباط با ما </NavLink>
+                        </div>
                     </div>
                     <button className="absolute left-[100px] w-[150px] border-2 h-10 bg-blue-700 text-white rounded-full pb-[5px]"> ورود / ثبت نام </button>
                 </div>    
