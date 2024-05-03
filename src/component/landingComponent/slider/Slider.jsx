@@ -17,10 +17,10 @@ const Services = () => {
     return ( 
         <div>
             <div className="mb-[50px]">
-                <h2 className="text-center mb-[10px] text-xl font-bold"> خدمات ما </h2>
+                <h2 className="text-center mb-[10px] text-3xl font-bold"> خدمات ما </h2>
                 <p className="text-center"> لورک ایپسوم متن ساختگی با تولید ساختگی </p>
             </div>
-            <div className="flex gap-[70px] w-[900px] h-[320px] mx-auto">
+            <div className="flex gap-[70px] w-[700px] h-[320px] mx-auto">
                 {servis.map((item) => {
                     return(
                         <div className="mx-auto">
