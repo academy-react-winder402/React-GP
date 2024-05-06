@@ -1,6 +1,6 @@
 import login from "../../../public/mobile-testing.png";
-import sun from "../../../public/sun.png";
-import home from "../../../public/home.png";
+import sun from "../../../public/icons8-sun-48.png";
+import home from "../../../public/icons8-home-32.png";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { Link } from "react-router-dom";
 import * as Yup from "yup";
@@ -21,13 +21,13 @@ const LoginComponent = () => {
           <div className="w-[40%]">
             <img src={login} alt="" />
           </div>
-          <div className="w-[60%] bg-[#ECE9FF] rounded-[10px]">
+          <div className="w-[60%] bg-blue-400 rounded-[10px]">
             <div className="head w-[100%] flex justify-end gap-[16px] mt-[25px]">
               <img src={sun} alt="" className="w-[24px] h-[24px]" />
               <img src={home} alt="" className="me-[25px] w-[24px] h-[24px]" />
             </div>
             <div className="">
-              <h1 className="text-[28px] text-[#2416E9] text-center font-normal mb-[48px]">
+              <h1 className="text-[28px] text-white text-center font-normal mb-[48px]">
                 ورود به سایت
               </h1>
               <Formik
@@ -36,7 +36,7 @@ const LoginComponent = () => {
               >
                 <Form className="flex flex-col items-center gap-[16px]">
                   <div className="w-[60%]">
-                    <p className="text-[14px] font-normal text-right text-[#A193FF] mb-[14px]">نام کاربری و رمز عبور خود را وارد کنید</p>
+                    <p className="text-[14px] font-normal text-right text-white mb-[14px]">نام کاربری و رمز عبور خود را وارد کنید</p>
                     <Field
                       name="username"
                       type="text"
@@ -54,11 +54,11 @@ const LoginComponent = () => {
 
                     <div>
                       <div className="w-[20%] mr-auto">
-                        <Link to='/forgetpass' className="text-[#A193FF] text-[14px] font-normal">فراموشی رمز؟</Link>
+                        <Link to='/forgetpass' className="text-white text-[14px] font-normal">فراموشی رمز؟</Link>
                       </div>
                       <div className="flex">
                         <input type="checkbox" className="w-[30px] h-[30px]"/>
-                        <p className="text-[#A193FF] text-[14px] font-normal my-auto">مرا به خاطر بسپار</p>
+                        <p className="text-white text-[14px] font-normal my-auto">مرا به خاطر بسپار</p>
                       </div>
                     </div>
                   </div>
@@ -68,8 +68,8 @@ const LoginComponent = () => {
                   </Link>
 
                   <div className="flex">
-                    <p className="text-[#A193FF] text-[14px] font-normal mt-[7px] ml-[5px]">حساب کاربری ندارید؟</p>
-                    <Link to='/register' className="text-[#2416E9] text-[14px] font-normal mt-[7px]">ثبت نام</Link>
+                    <p className="text-white text-[14px] font-normal mt-[7px] ml-[5px]">حساب کاربری ندارید؟</p>
+                    <Link to='/register' className="text-yellow-300 text-[14px] font-normal mt-[7px]">ثبت نام</Link>
                   </div>
                 </Form>
               </Formik>

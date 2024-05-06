@@ -10,9 +10,9 @@ const SecondStep = ({setStepCounter}) => {
 
     return (
       <>
-      <h1 className='text-center text-[#2416E9] font-normal text-3xl leading-10'> تایید کد</h1>
-      <p className='leading-5 text-[#A193FF] text-center mt-[40px]'>لطفا کد یک بار مصرف را وارد کنید  </p>
-      <div className='border-2 w-[350px] h-[45px] mx-auto mt-[20px]'>
+      <h1 className='text-center text-white font-normal text-3xl leading-10'> تایید کد</h1>
+      <p className='leading-5 text-white text-center mt-[40px]'>لطفا کد یک بار مصرف را وارد کنید  </p>
+      <div className='w-[350px] h-[45px] mx-auto mt-[20px]'>
 
           <Formik initialValues={{registerCode:''}} onSubmit={handleSecond}>
             <Form>
@@ -28,7 +28,7 @@ const SecondStep = ({setStepCounter}) => {
         </div>
         <div className='steps flex mt-[110px] relative'>
           {/* <div><button  className='border-2  w-[88px] h-[32px] bg-[#E3DCFF] text-[#2416E9]'>مرحله بعدی </button></div> */}
-          <div className='absolute w-[100px] left-4'><button onClick={()=>setStepCounter(1)} className='border-2 w-[88px] h-[32px] bg-[#E3DCFF]'>مرحله ی قبل</button></div>
+          <div className='absolute w-[100px] left-4'><button onClick={()=>setStepCounter(1)} className='border-2 w-[88px] h-[32px] bg-[#E3DCFF] rounded-lg'>مرحله ی قبل</button></div>
         </div>
 
       <div className='flex h-[40px] mt-[70px] w-[600px] mx-auto' >
@@ -41,9 +41,9 @@ const SecondStep = ({setStepCounter}) => {
         </div>
       </div>
         <div className='flex mx-auto  w-[600px] justify-between'>
-        <div className='text-[#A193FF] font-normal text-sm leading-[50px]'>  تغییر رمز عبور  </div>
-        <div className='text-[#4E447D] font-normal text-sm leading-[50px]'>دریافت کد  </div>
-        <div className='text-[#4E447D] font-normal text-sm leading-[50px] indent-6'> ایمیل   </div>
+        <div className='text-white font-normal text-sm leading-[50px]'>  تغییر رمز عبور  </div>
+        <div className='text-white font-normal text-sm leading-[50px]'>دریافت کد  </div>
+        <div className='text-white font-normal text-sm leading-[50px] indent-6'> ایمیل   </div>
 
        </div>
       </>

@@ -12,9 +12,9 @@ const FirstStep = ({setStepCounter}) => {
   return (
   <>
 
-<h1 className='text-center text-[#2416E9] font-normal text-3xl leading-10'>ثبت نام</h1>
-    <p className='leading-5 text-[#A193FF] text-center mt-[40px]'>جهت دریافت کد یک بار مصرف شماره تلفن خود را وارد کنید.</p>
-    <div className='border-2 w-[350px] h-[45px] mx-auto mt-[20px]'>
+<h1 className='text-center text-white font-normal text-3xl leading-10'>ثبت نام</h1>
+    <p className='leading-5 text-white text-center mt-[40px]'>جهت دریافت کد یک بار مصرف شماره تلفن خود را وارد کنید.</p>
+    <div className='w-[350px] h-[45px] mx-auto mt-[20px]'>
 
         <Formik initialValues={{phoneNumber:''}} onSubmit={handleFirst}>
           <Form>
@@ -38,9 +38,9 @@ const FirstStep = ({setStepCounter}) => {
         </div>
       </div>
       <div className='flex mx-auto  w-[600px] justify-between'>
-        <div className='text-[#A193FF] font-normal text-sm leading-[50px]'>  مشخصات کاربری </div>
-        <div className='text-[#A193FF] font-normal text-sm leading-[50px]'>دریافت کد</div>
-        <div className='text-[#4E447D] font-normal text-sm leading-[50px] indent-6'>  شماره تماس </div>
+        <div className='text-white font-normal text-sm leading-[50px]'>  مشخصات کاربری </div>
+        <div className='text-white font-normal text-sm leading-[50px]'>دریافت کد</div>
+        <div className='text-white font-normal text-sm leading-[50px] indent-6'>  شماره تماس </div>
 
       </div>
   </>
