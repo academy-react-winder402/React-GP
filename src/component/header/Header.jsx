@@ -18,9 +18,9 @@ const Header = () => {
             <div className="block sm:hidden">
                 <div className='flex pt-4 h-[70px]'>
                 <div onClick={handleClick} className="absolute right-[50px]">
-                        <img className="bg-blue-500 w-[30px] h-[30px] p-[3px] rounded-md" src="more.png"/>
+                        <img className="bg-blue-500 w-[30px] h-[30px] p-[3px] rounded-md text-center pt-[5px]" src="more.png"/>
                         <div className={menu}>
-                            <button className="w-[100px] h-[35px] border-b-2 bg-white hover:bg-gray-100"> ورود / ثبت نام </button>
+                            <NavLink className="w-[100px] h-[35px] border-b-2 bg-white hover:bg-gray-100"> ورود / ثبت نام </NavLink>
                             <NavLink to='/' className='w-[100px] block h-[35px] border-b-2 bg-white hover:bg-gray-100'> صفحه اصلی </NavLink>
                             <NavLink to='/courses' className='block h-[35px] border-b-2 bg-white hover:bg-gray-100'> دوره </NavLink>
                             <NavLink className='block h-[35px] border-b-2 bg-white hover:bg-gray-100'> مقالات </NavLink>
@@ -37,7 +37,7 @@ const Header = () => {
                     <div onClick={handleClick} className="absolute right-[50px] bg-white">
                         <img className="bg-blue-500 w-[30px] h-[30px] p-[3px] rounded-md" src="more.png"/>
                         <div className={menu}>
-                            <button className="w-[100px] h-[35px] border-b-2 bg-white hover:bg-gray-100"> ورود / ثبت نام </button>
+                            <NavLink className="w-[100px] h-[35px] border-b-2 bg-white hover:bg-gray-100 text-center pt-[5px]"> ورود / ثبت نام </NavLink>
                             <NavLink to='/' className='w-[100px] block h-[35px] border-b-2 bg-white hover:bg-gray-100'> صفحه اصلی </NavLink>
                             <NavLink to='/courses' className='block h-[35px] border-b-2 bg-white hover:bg-gray-100'> دوره </NavLink>
                             <NavLink className='block h-[35px] border-b-2 bg-white hover:bg-gray-100'> مقالات </NavLink>
@@ -62,7 +62,7 @@ const Header = () => {
                         </div>
                     </div>
                     <h1 className="mr-[40%]"> BAHR ACADEMY </h1>
-                    <button className="absolute left-[50px] w-[170px] border-2 h-10 bg-blue-700 text-white rounded-full pb-[5px]"> ورود / ثبت نام </button>
+                    <NavLink className="absolute left-[50px] w-[170px] border-2 h-10 bg-blue-700 text-white text-center pt-[5px] rounded-full pb-[5px]"> ورود / ثبت نام </NavLink>
                 </div>  
             </div>
 
@@ -76,7 +76,7 @@ const Header = () => {
                         <NavLink> اساتید </NavLink>
                         <NavLink className='w-[80px]'> ارتباط با ما </NavLink>
                     </div>
-                    <button className="absolute left-[50px] w-[160px] border-2 h-10 bg-blue-700 text-white rounded-full pb-[5px]"> ورود / ثبت نام </button>
+                    <NavLink className="absolute left-[50px] w-[160px] border-2 h-10 bg-blue-700 text-white text-center pt-[5px] rounded-full pb-[5px]"> ورود / ثبت نام </NavLink>
                 </div>  
             </div>
 
@@ -92,7 +92,9 @@ const Header = () => {
                             <NavLink className='w-[80px] text-white'> ارتباط با ما </NavLink>
                         </div>
                     </div>
-                    <button className="absolute left-[100px] w-[150px] border-2 h-10 bg-blue-700 text-white rounded-full pb-[5px]"> ورود / ثبت نام </button>
+                    <NavLink to='/login' className="absolute left-[100px] w-[150px] border-2 h-10 bg-blue-700 text-white text-center pt-[5px] rounded-full pb-[5px]"> 
+                    ورود / ثبت نام 
+                    </NavLink>
                 </div>    
             </div>
 
