@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
+
 const Header = () => {
     const [menu , setMenu] = useState('hidden')
 
@@ -80,25 +81,24 @@ const Header = () => {
                 </div>  
             </div>
 
-            <div className=' hidden xl:block'>
+            <div id="head" className='hidden xl:block'>
                 <div className='flex pt-3 h-[70px]'>
                     <h1 className="mr-[7%] absolute z-20 text-white font-semibold text-lg"> BAHR ACADEMY </h1>
                     <div className="mr-[250px] absolute z-20">
                         <div className="flex gap-[30px] mr-[50px] ">
                             <NavLink to='/' className='w-[90px] text-white'> صفحه اصلی </NavLink>
-                            <NavLink className="text-white" to='/courses'> دوره </NavLink>
+                            <NavLink to='/Corc' className="text-white" to='/courses'> دوره </NavLink>
                             <NavLink className="text-white"> مقالات </NavLink>
                             <NavLink className="text-white"> اساتید </NavLink>
                             <NavLink className='w-[80px] text-white'> ارتباط با ما </NavLink>
                         </div>
                     </div>
-                    <NavLink to='/login' className="absolute left-[100px] w-[150px] border-2 h-10 bg-blue-700 text-white text-center pt-[5px] rounded-full pb-[5px]"> 
-                    ورود / ثبت نام 
+                    <NavLink to='/register' className="absolute left-[100px] w-[150px] border-2 h-10 bg-blue-700 text-white text-center pt-[5px] rounded-full pb-[5px]">
+                        ورود / ثبت نام 
                     </NavLink>
-                </div>    
+                </div> 
             </div>
-
-         </div>
+        </div>
      );
 }
  

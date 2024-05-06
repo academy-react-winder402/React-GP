@@ -21,14 +21,14 @@ const NewRegister = () => {
         <div className='l bg-blue-400 w-[65%] h-[100%] rounded-xl'>
           <div className='lheader  flex w-[95%] h-[8%] mx-auto mt-[10px] '>
 
-            <Link to='/' className='lheaderr h-[100%] w-[50%] flex indent-3 text-white leading-[45px] font-normal justify-start '>
+            <Link to='/login' className='lheaderr h-[100%] w-[50%] flex indent-3 text-white leading-[45px] font-normal justify-start '>
               <img className='w-[25px] h-[25px] mt-[10px]' src='../../public/icons8-enter-32.png'/>
               ورود به سایت
 
             </Link>
             <div className='lheaderl h-[100%] w-[50%] flex  gap-[20px] justify-end'>
-              <div className=' mt-[10px]'> <img className='h-[35px] w-[35px]' src='../../public/icons8-sun-48.png'/> </div>
-              <div className=' mt-[9px]'> <img src='../../public/icons8-home-32.png'/> </div>
+              <Link className=' mt-[10px]'> <img className='h-[35px] w-[35px]' src='../../public/icons8-sun-48.png'/> </Link>
+              <Link to='/' className=' mt-[9px]'> <img src='../../public/icons8-home-32.png'/> </Link>
 
             </div>
           </div>
