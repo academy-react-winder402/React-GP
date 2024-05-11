@@ -53,7 +53,7 @@ const LoginComponent = () => {
                       <ErrorMessage name="username"></ErrorMessage>
 
                       <div>
-                        <div className="w-[20%] mr-auto">
+                        <div className="w-[25%] mr-auto">
                           <Link to='/forgetpass' className="text-white text-[14px] font-normal">فراموشی رمز؟</Link>
                         </div>
                         <div className="flex">
@@ -63,7 +63,7 @@ const LoginComponent = () => {
                       </div>
                     </div>
 
-                    <Link to='/' className="w-[40%] h-[40px] bg-[#732AFF] text-[#FFFFFF] rounded-[10px] mt-[24px]">
+                    <Link to='/' className="w-[40%] h-[40px] bg-[#732AFF] text-[#FFFFFF] rounded-[10px] mt-[24px] text-center pt-1">
                       ورود
                     </Link>
 

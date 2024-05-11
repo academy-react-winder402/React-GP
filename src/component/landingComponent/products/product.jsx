@@ -24,8 +24,8 @@ const Product = () => {
             <img className="absolute z-10 top-[470px] h-[160px] w-[130px]" src={moraba1}/>
             <img className="absolute z-10 top-[585px] right-[75px] h-[70px] w-[70px]" src={moraba2}/>
             <img className="absolute z-10 top-[570px] right-[180px] h-[30px] w-[30px]" src={moraba5}/>
-            <img className="absolute z-10 top-[100px] right-[800px] w-[644px] h-[615px]" src={BigSC}/>
-            <img className="absolute z-10 top-[680px] right-[1300px] w-[170px] h-[140px]" src={group}/>
+            <img className="absolute z-10 top-[100px] right-[800px] w-[37%] h-[500px]" src={BigSC}/>
+            <img className="absolute z-10 top-[600px] right-[80%] w-[10%] h-[140px]" src={group}/>
         </div>
      );
 }

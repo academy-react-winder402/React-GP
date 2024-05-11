@@ -2,9 +2,9 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Leyout from "./leyout";
 import Landing from "../Screen/landing/landing";
 import Courses from "../Screen/courses/courses";
-import Register from "../Screen/Register/Register";
 import LoginComponent from "../component/Logincomponent/LoginComponent";
 import ForgetPass from "../component/forgetPass/ForgetPass";
+import NewRegister from "../component/Register/NewRegister";
 
 const Routes = () => {
 
@@ -25,7 +25,7 @@ const Routes = () => {
         },
         {
             path:'/register',
-            element:<Register/>          
+            element:<NewRegister/>          
         },
         {
             path:'/login',

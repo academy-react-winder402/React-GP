@@ -81,13 +81,13 @@ const Header = () => {
                 </div>  
             </div>
 
-            <div id="head" className='hidden xl:block'>
+            <div className='hidden xl:block'>
                 <div className='flex pt-3 h-[70px]'>
                     <h1 className="mr-[7%] absolute z-20 text-white font-semibold text-lg"> BAHR ACADEMY </h1>
                     <div className="mr-[250px] absolute z-20">
                         <div className="flex gap-[30px] mr-[50px] ">
                             <NavLink to='/' className='w-[90px] text-white'> صفحه اصلی </NavLink>
-                            <NavLink to='/Corc' className="text-white" to='/courses'> دوره </NavLink>
+                            <NavLink className="text-white" to='/courses'> دوره </NavLink>
                             <NavLink className="text-white"> مقالات </NavLink>
                             <NavLink className="text-white"> اساتید </NavLink>
                             <NavLink className='w-[80px] text-white'> ارتباط با ما </NavLink>
