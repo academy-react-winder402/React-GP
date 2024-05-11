@@ -10,7 +10,7 @@ const CoursesList = () => {
     return ( 
         <div>
             <div className='hidden xl:block'></div>
-                <Product />
+            
                 <h1 className="font-bold text-2xl mr-14"> دوره پیشرفته هک و امنیت </h1>
                 <div className="mx-auto flex gap-14 justify-center">
                     <div className="w-[65%] min-h-[1000px]">

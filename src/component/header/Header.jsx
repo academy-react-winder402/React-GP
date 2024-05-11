@@ -1,10 +1,12 @@
-import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 
 const Header = () => {
     const [menu , setMenu] = useState('hidden')
-
+    const [bgColor , setBgColor] = useState('')
+    const location = useLocation()
+    console.log(location);
     const handleClick = () => {
         if(menu === 'hidden'){
             setMenu('block')
@@ -14,8 +16,17 @@ const Header = () => {
         }
     }
 
+    useEffect(()=>{
+        if(location.pathname==='/'){
+            setBgColor('')
+        }
+        else{
+            setBgColor('bg-blue-500')
+        }
+    },[location])
+
     return ( 
-        <div> 
+        <div className={bgColor}> 
             <div className="block sm:hidden">
                 <div className='flex pt-4 h-[70px]'>
                 <div onClick={handleClick} className="absolute right-[50px]">
