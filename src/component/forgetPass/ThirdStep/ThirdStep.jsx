@@ -20,7 +20,7 @@ const ThirdStep = ({setStepCounter}) => {
               <Field name='password' type='password' placeholder='لطفا رمز جدید خود را وارد کنید'  className='h-[40px] w-[100%] rounded-[10px]'/>
               <Field name='password' type='password' placeholder='لطفا رمز جدید خود را وارد کنید'  className='h-[40px] w-[100%] rounded-[10px] mt-[30px]'/>
             <div className='flex justify-center '> 
-                <button type='submit' className='text-[#fff] rounded-[5px] border-2 bg-gradient-to-r from-[#732AFF] to-[#4545FF] mt-[35px] h-[42px] w-[270px]'>
+                <button type='submit' className='text-[#fff] rounded-full border-2 bg-gradient-to-r from-[#732AFF] to-[#4545FF] mt-[35px] h-[42px] w-[270px]'>
                   تغییر رمز  
                 </button>
              </div>
@@ -32,18 +32,18 @@ const ThirdStep = ({setStepCounter}) => {
           {/* <div><button  className='border-2  w-[88px] h-[32px] bg-[#E3DCFF] text-[#2416E9]'>مرحله بعدی </button></div> */}
           <div className='absolute w-[100px] left-4'><button onClick={()=>setStepCounter(2)} className='border-2 w-[88px] h-[32px] bg-[#E3DCFF] rounded-lg'>مرحله ی قبل</button></div>
         </div>
-      <div className='flex h-[40px] mt-[70px] w-[600px] mx-auto' >
-        <div className='w-[40px] h-[40px]  border-2 border-[#8735F5] text-[#3F40EA] rounded-full  leading-8 text-center'>3</div>
-        <div className='w-[240px] h-[0] mt-[16px] border-4 border-[#732AFF]'></div>
-        <div  className='w-[40px] h-[40px]  border-2 border-[#8735F5] rounded-full text-[#3F40EA] bg-[#732AFF] leading-8 text-center'>
+      <div className='flex h-[40px] mt-[70px] w-[600px] mx-auto justify-center' >
+        <div className='w-[40px] h-[40px]  border-2 border-gray-700 text-gray-700 rounded-xl  leading-8 text-center'>3</div>
+        <div className='w-[25%] h-[0] mt-[16px] border-4 border-blue-400'></div>
+        <div  className='w-[40px] h-[40px]  border-2 border-gray-700 rounded-xl text-gray-700 bg-[#732AFF] leading-8 text-center'>
           <img className='w-[65%] h-[65%] mt-[7px] mx-auto' src='../../../../public/check.png'/>
         </div>
-        <div  className=' w-[240px] h-[0] mt-[16px] border-4 border-[#732AFF]'></div>
-        <div  className='w-[40px] h-[40px]  border-2 border-[#8735F5] rounded-full text-[#3F40EA] bg-[#732AFF]  leading-8 text-center'>
+        <div  className=' w-[25%] h-[0] mt-[16px] border-4 border-blue-400'></div>
+        <div  className='w-[40px] h-[40px]  border-2 border-gray-700 rounded-xl text-gray-700 bg-[#732AFF]  leading-8 text-center'>
           <img className='w-[65%] h-[65%] mt-[7px] mx-auto' src='../../../../public/check.png'/>
         </div>
       </div>
-        <div className='flex mx-auto  w-[600px] justify-between'>
+        <div className='flex mx-auto  w-[600px] justify-center gap-[20%]'>
         <div className='text-white font-normal text-sm leading-[50px]'>  تغییر رمز عبور  </div>
         <div className='text-white font-normal text-sm leading-[50px]'>دریافت کد  </div>
         <div className='text-white font-normal text-sm leading-[50px] indent-6'>  ایمیل</div>
