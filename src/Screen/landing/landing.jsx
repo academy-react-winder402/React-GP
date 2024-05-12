@@ -1,11 +1,15 @@
+import Card from "../../component/landingComponent/card/card";
+import MiniSlider from "../../component/landingComponent/miniSlider/miniSlider";
 import Product from "../../component/landingComponent/products/product";
-import Slider from "../../component/landingComponent/slider/Slider";
+import Services from "../../component/landingComponent/slider/servis";
 
 const Landing = () => {
     return ( 
         <>
-            <Slider />
             <Product />
+            <Services />
+            <MiniSlider />
+            <Card />
         </>
      );
 }
