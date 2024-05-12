@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import FirstStep from "./FirstStep/FirstStep";
-import SecondStep from "./SecondStep/SecondStep";
-import ThirdStep from "./ThirdStep/ThirdStep";
-import { Link } from "react-router-dom";
-import register from "../../../public/mobile-testing.png"
+import React, { useState } from 'react'
+import FirstStep from './FirstStep/FirstStep'
+import SecondStep from './SecondStep/SecondStep'
+import ThirdStep from './ThirdStep/ThirdStep'
+import { Link } from 'react-router-dom'
+import register from '../../../public/mobile-testing.png'
+
 
 const NewRegister = () => {
     const windowHeight = window.innerHeight;
@@ -26,21 +27,25 @@ const NewRegister = () => {
               <Link to='/' className=' mt-[9px]'> <img src='../../public/icons8-home-32.png'/> </Link>
 
             </div>
-
-            {StepCounter === 1 && <FirstStep setStepCounter={setStepCounter} />}
-            {StepCounter === 2 && (
-              <SecondStep setStepCounter={setStepCounter} />
-            )}
-            {StepCounter === 3 && <ThirdStep setStepCounter={setStepCounter} />}
           </div>
-        </div>
+          
+            {StepCounter===1 && <FirstStep setStepCounter={setStepCounter}/>}
+            {StepCounter===2 && <SecondStep setStepCounter={setStepCounter}/>}
+            {StepCounter===3 && <ThirdStep  setStepCounter={setStepCounter}/>}
+               
+          </div>
+
+
+
+
       </div>
       <img src={register} alt="" />
     </div>
 
-      <div className="bg-forgetBlur"></div>
-    </>
-  );
-};
 
-export default NewRegister;
+          <div className='bg-forgetBlur'></div>
+        </>
+      )
+}
+
+export default NewRegister
