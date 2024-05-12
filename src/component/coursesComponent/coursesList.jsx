@@ -6,7 +6,7 @@ import FirstRight from "./right/firstRight/firstRight";
 import Nazarat from "./right/nazarat/nazarat";
 import RightToz from "./right/rightToz";
 import Slide from "./right/slid2/slid2";
-//
+//ttt
 const CoursesList = () => {
   return (
     <div>
