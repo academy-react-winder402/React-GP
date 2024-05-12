@@ -19,8 +19,7 @@ const LoginComponent = () => {
         <div className="z-30 absolute w-[100%] z-9 top-[50px]">
           <div className="bg-[url('../../../public/bg-blur.png')] w-[100%] h-[70%] flex mx-auto rounded-[10px]">
             <div className="w-[70%] bg-blue-400 rounded-[10px]">
-              <div className="head w-[100%] flex justify-end gap-[16px] mt-[25px]">
-                <img src={sun} alt="" className="w-[24px] h-[24px]" />
+              <div className="head w-[100%] flex justify-end mt-[25px]">
                 <img
                   src={home}
                   alt=""
