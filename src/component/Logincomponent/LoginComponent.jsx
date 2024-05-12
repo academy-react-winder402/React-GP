@@ -1,4 +1,5 @@
 import sun from "../../../public/icons8-sun-48.png";
+import lag from "../../../public/mobile-testing.png";
 import home from "../../../public/icons8-home-32.png";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { Link } from "react-router-dom";
@@ -13,11 +14,11 @@ const LoginComponent = () => {
   });
 
   return (
-    <div className="w-full bg-gray-700/50">
+    <div className="w-full flex px-10">
       <div className="relative w-[100%]" style={{ height: windowHeight }}>
-        <div className="z-30 absolute w-[100%] z-9 top-[100px]">
-          <div className="bg-[url('../../../public/bg-blur.png')] w-[80%] h-[70%] flex mx-auto rounded-[10px]">
-            <div className="w-[60%] bg-blue-400 rounded-[10px] mx-auto">
+        <div className="z-30 absolute w-[100%] z-9 top-[50px]">
+          <div className="bg-[url('../../../public/bg-blur.png')] w-[100%] h-[70%] flex mx-auto rounded-[10px]">
+            <div className="w-[70%] bg-blue-400 rounded-[10px]">
               <div className="head w-[100%] flex justify-end gap-[16px] mt-[25px]">
                 <img src={sun} alt="" className="w-[24px] h-[24px]" />
                 <img
@@ -26,7 +27,7 @@ const LoginComponent = () => {
                   className="me-[25px] w-[24px] h-[24px]"
                 />
               </div>
-              <div className="">
+              <div className="mb-10">
                 <h1 className="text-[28px] text-white text-center font-normal mb-[48px]">
                   ورود به سایت
                 </h1>
@@ -55,7 +56,7 @@ const LoginComponent = () => {
                       <ErrorMessage name="username"></ErrorMessage>
 
                       <div>
-                        <div className="w-[25%] mr-auto">
+                        <div className="w-[30%] mr-auto">
                           <Link
                             to="/forgetpass"
                             className="text-white text-[14px] font-normal"
@@ -77,22 +78,10 @@ const LoginComponent = () => {
 
                     <Link
                       to="/"
-                      className="w-[40%] h-[40px] bg-[#732AFF] text-[#FFFFFF] rounded-[10px] mt-[24px] text-center pt-1"
+                      className="w-[40%] h-[40px] bg-[#732AFF] text-[#FFFFFF] rounded-full mt-[24px] text-center pt-1"
                     >
                       ورود
                     </Link>
-
-                    <div className="flex">
-                      <p className="text-white text-[14px] font-normal mt-[7px] ml-[5px]">
-                        حساب کاربری ندارید؟
-                      </p>
-                      <Link
-                        to="/register"
-                        className="text-yellow-300 text-[14px] font-normal mt-[7px]"
-                      >
-                        ثبت نام
-                      </Link>
-                    </div>
                   </Form>
                 </Formik>
               </div>
@@ -100,6 +89,7 @@ const LoginComponent = () => {
           </div>
         </div>
       </div>
+      <img className="w-full" src={lag} alt="" />
     </div>
   );
 };
