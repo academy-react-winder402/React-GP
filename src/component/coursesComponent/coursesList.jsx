@@ -5,6 +5,7 @@ import Left from "./left/left";
 import FirstRight from "./right/firstRight/firstRight";
 import Nazarat from "./right/nazarat/nazarat";
 import RightToz from "./right/rightToz";
+import Slide from "./right/slid2/slid2";
 
 const CoursesList = () => {
     return ( 
@@ -13,16 +14,19 @@ const CoursesList = () => {
             
                 <h1 className="font-bold text-2xl mr-14"> دوره پیشرفته هک و امنیت </h1>
                 <div className="mx-auto flex gap-14 justify-center">
-                    <div className="w-[65%] min-h-[1000px]">
+                    <div className="w-[65%]">
                         <RightToz/>
                         <FirstRight/>
                         <Nazarat/>
                     </div>
-                    <div className="w-[25%] min-h-[3000px]">
+                    <div className="w-[25%]">
                         <Left/>
                         <FirstLeft/>
                         <EndLeft/>
                     </div>
+                </div>
+                <div className="mt-36">
+                    <Slide/>
                 </div>
         </div>
      );
