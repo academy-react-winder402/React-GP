@@ -30,16 +30,6 @@ const FirstStep = ({setStepCounter}) => {
       </div>
 
       <div className='flex h-[40px] mt-[180px] w-[600px] mx-auto justify-center' >
-<<<<<<< HEAD
-        <div className='w-[40px] h-[40px]  border-2 border-[#8735F5] text-[#3F40EA] rounded-full leading-8 text-center '>3</div>
-        <div className='w-[25%] h-[0] mt-[16px] border-4 border-[#A193FF]'></div>
-        <div  className='w-[40px] h-[40px]  border-2 border-[#8735F5] text-[#3F40EA] rounded-full leading-8 text-center '>2</div>
-        <div  className=' w-[25%] h-[0] mt-[16px] border-4  border-[#A193FF]'></div>
-        <div  className='w-[40px] h-[40px] text-[#3F40EA] text-center border-2 border-[#8735F5]  rounded-full leading-8  '>1
-        </div>
-      </div>
-      <div className='flex mx-[auto]  w-[600px] justify-center gap-[20%]'>
-=======
         <div className='w-[40px] h-[40px]  border-2 border-gray-700 text-gray-700 rounded-xl leading-8 text-center '>3</div>
         <div className='w-[25%] h-[0] mt-[16px] border-4 border-blue-400'></div>
         <div  className='w-[40px] h-[40px]  border-2 border-gray-700 text-gray-700 rounded-xl leading-8 text-center '>2</div>
@@ -48,7 +38,6 @@ const FirstStep = ({setStepCounter}) => {
         </div>
       </div>
       <div className='flex mx-auto  w-[600px] justify-center gap-[20%]'>
->>>>>>> Amir/dev
         <div className='text-white font-normal text-sm leading-[50px]'>  مشخصات کاربری </div>
         <div className='text-white font-normal text-sm leading-[50px]'>دریافت کد</div>
         <div className='text-white font-normal text-sm leading-[50px] indent-6'>  شماره تماس </div>
