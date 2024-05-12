@@ -4,7 +4,7 @@ const Courses = () => {
     return ( 
         <>
             <CoursesList />
-
+            
         </>
      );
 }
