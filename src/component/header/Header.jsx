@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
+import profile from '../../../public/Vector profile.png'
 
 
 const Header = () => {
@@ -21,7 +22,7 @@ const Header = () => {
             setBgColor('')
         }
         else{
-            setBgColor('bg-blue-500')
+            setBgColor('bg-blue-600')
         }
     },[location])
 
@@ -80,13 +81,13 @@ const Header = () => {
 
             <div className='hidden lg:block xl:hidden'>
                 <div className='flex pt-3 h-[70px]'>
-                    <h1 className="mr-[4%]"> BAHR ACADEMY </h1>
-                    <div className="flex gap-[30px] mr-[50px] ">
-                        <NavLink to='/' className='w-[90px]'> صفحه اصلی </NavLink>
-                        <NavLink to='/courses'> دوره </NavLink>
-                        <NavLink> مقالات </NavLink>
-                        <NavLink> اساتید </NavLink>
-                        <NavLink className='w-[80px]'> ارتباط با ما </NavLink>
+                    <h1 className="mr-[4%] absolute z-20 text-white font-semibold text-lg"> BAHR ACADEMY </h1>
+                    <div className="flex gap-[20px] mr-[210px] absolute z-20">
+                        <NavLink to='/' className='w-[90px] text-white'> صفحه اصلی </NavLink>
+                        <NavLink className='text-white' to='/courses'> دوره </NavLink>
+                        <NavLink className='text-white'> مقالات </NavLink>
+                        <NavLink className='text-white'> اساتید </NavLink>
+                        <NavLink className='w-[80px] text-white'> ارتباط با ما </NavLink>
                     </div>
                     <NavLink className="absolute left-[50px] w-[160px] border-2 h-10 bg-blue-700 text-white text-center pt-[5px] rounded-full pb-[5px]"> ورود / ثبت نام </NavLink>
                 </div>  
@@ -99,16 +100,25 @@ const Header = () => {
                         <div className="flex gap-[30px] mr-[50px] ">
                             <NavLink to='/' className='w-[90px] text-white'> صفحه اصلی </NavLink>
                             <NavLink className="text-white" to='/courses'> دوره </NavLink>
-                            <NavLink className="text-white"> مقالات </NavLink>
+                            <NavLink to='/productb' className="text-white"> مقالات </NavLink>
                             <NavLink className="text-white"> اساتید </NavLink>
                             <NavLink className='w-[80px] text-white'> ارتباط با ما </NavLink>
                         </div>
                     </div>
-                    <NavLink to='/register' className="absolute left-[100px] w-[150px] border-2 h-10 bg-blue-700 text-white text-center pt-[5px] rounded-full pb-[5px]">
+                    <div>
+                    <NavLink className='absolute z-20 left-[100px] bg-blue-600 w-10 h-10 rounded-full pt-[4px] pr-[6px]'>
+                        <img className="h-7 w-7" src={profile}/>
+                    </NavLink>
+                    <NavLink to='/register' className="absolute left-[150px] w-[150px] border-2 h-10 bg-blue-600 text-white text-center pt-[5px] rounded-full pb-[5px]">
                         ورود / ثبت نام 
                     </NavLink>
+                    </div>
                 </div> 
             </div>
+
+
+
+            
         </div>
      );
 }

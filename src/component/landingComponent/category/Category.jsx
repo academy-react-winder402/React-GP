@@ -1,35 +1,34 @@
-import pic1 from "../../../assets/1.png"
-import pic2 from "../../../assets/2.png"
-import pic3 from "../../../assets/3.png"
-import pic4 from "../../../assets/4.png"
-import pic5 from "../../../assets/5.png"
+import { useState } from "react";
+import img1 from "../../../../public/communication-and-connectivity-1 1.png";
+import img2 from "../../../../public/communication-and-connectivity-1 (4) 1.png";
+import img3 from "../../../../public/communication-and-connectivity-1 (3) 1.png";
+import img4 from "../../../../public/communication-and-connectivity-1 (2) 1.png";
+import img5 from "../../../../public/communication-and-connectivity-1 (1) 1.png";
+
 const Category =()=>{
+
+    const [servis , setServis] = useState([
+        { src:img1, fName:'  وب  ' },
+        { src:img2, fName:'  هک و امنیت  ' },
+        { src:img3, fName:'  هوش مصنوعی  ' },
+        { src:img4, fName:'  داده کاوی  ' },
+        { src:img5, fName:'  طراحی رابط کاربری  ' },
+    ])
+
     return(
-        <div className="mt-28">
-        <h2 className="font-bold text-xl mb-24 text-center"> دسته بندی ها </h2>
-    <div className="flex justify-evenly px-20">
-    <div> 
-<img src={pic1} alt="img" className="w-56" />
-        <p className="text-center">طراحی رابط کاربری</p>
-    </div>
-     <div>
-     <img src={pic2} alt="img" className="w-56" />
-     <p className="text-center">داده کاوی</p>
- </div>
-  <div>
-  <img src={pic3} alt="img" className="w-56" />
-  <p className="text-center">هوش مصنوعی</p>
-</div>
- <div>
- <img src={pic4} alt="img" className="w-56" />
- <p className="text-center">هک و امنیت</p>
-</div>
- <div>
- <img src={pic5} alt="img" className="w-56" />
- <p className="text-center">وب</p>
-</div>
-</div>
-</div>
+        <div>
+            <h2 className="text-center text-3xl font-bold mb-[70px] mt-[100px]"> خدمات ما </h2>
+            <div className="flex gap-[50px] justify-center w-[1000px] mx-auto">
+                {servis.map((item) => {
+                    return(
+                        <div className="mx-auto">
+                            <img className="w-[250px] h-[150px] mb-[20px]" src={item.src}/>
+                            <h2 className="text-lg text-center mb-[20px]"> {item.fName} </h2>
+                        </div>
+                    )
+                })}
+            </div>
+        </div>
 );
 };
 export default Category;
