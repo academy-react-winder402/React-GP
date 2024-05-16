@@ -7,11 +7,9 @@ import Footer from "../component/footer/footer";
 const Leyout = () => {
     return ( 
         <>
-        <Header />
-        <Category />
-        <Outlet />
-        <Pishnahad />
-        <Footer />
+            <Header />     
+            <Outlet />
+            <Footer />
         </>
     );
 }

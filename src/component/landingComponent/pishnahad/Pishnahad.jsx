@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import {Fragment} from "react";
-=======
 import React,{Fragment} from "react";
->>>>>>> 86b80e51bf3684219ea543a143974be4be8e17ca
 import picc from "../../../assets/lnd-removebg-preview.png"
 
 const Pishnahad = () => {
