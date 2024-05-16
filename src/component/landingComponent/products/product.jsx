@@ -27,7 +27,7 @@ const Product = () => {
         <img className="absolute z-10 top-[600px] right-[80%] w-[10%] h-[140px]" src={group}/>
       </div>
       
-      <div className="hidden lg:block xl:hidden h-[700px]">
+      <div className="hidden lg:block xl:hidden h-[500px]">
         <img className="w-[670px] h-[500px] absolute top-0" src={Rectangle} />
         <div className="absolute z-20 right-[100px] top-[100px]">
           <h1 className="text-3xl text-white mb-[30px]"> آکادمی بحر ... </h1>

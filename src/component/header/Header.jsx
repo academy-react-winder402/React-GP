@@ -29,8 +29,8 @@ const Header = () => {
     return ( 
         <div className={bgColor}> 
             <div className="block sm:hidden">
-                <div className='flex pt-4 h-[70px]'>
-                <div onClick={handleClick} className="absolute right-[50px]">
+                <div className='flex pt-4 h-[70px] bg-blue-600'>
+                    <div onClick={handleClick} className="absolute right-[50px]">
                         <img className="bg-blue-500 w-[30px] h-[30px] p-[3px] rounded-md text-center pt-[5px]" src="more.png"/>
                         <div className={menu}>
                             <NavLink className="w-[100px] h-[35px] border-b-2 bg-white hover:bg-gray-100"> ورود / ثبت نام </NavLink>
@@ -46,7 +46,7 @@ const Header = () => {
             </div>
 
             <div className='hidden sm:block md:hidden'>
-                <div className='flex pt-4 h-[70px]'>
+                <div className='flex pt-4 h-[70px] bg-blue-600'>
                     <div onClick={handleClick} className="absolute right-[50px] bg-white">
                         <img className="bg-blue-500 w-[30px] h-[30px] p-[3px] rounded-md" src="more.png"/>
                         <div className={menu}>
@@ -63,9 +63,9 @@ const Header = () => {
             </div>
 
             <div className='hidden md:block lg:hidden'>
-                <div className='flex pt-4 h-[70px]'>
+                <div className='flex pt-4 h-[70px] bg-blue-600'>
                     <div className="absolute right-[50px] bg-white">
-                        <img onClick={handleClick} className="bg-blue-500  w-[30px] h-[30px] p-[3px] rounded-md" src="more.png"/>
+                        <img onClick={handleClick} className="bg-blue-600 w-[30px] h-[30px] p-[3px]" src="more.png"/>
                         <div className={menu}>
                             <NavLink to='/' className='w-[90px] block border-b-2 bg-white hover:bg-gray-100 h-[35px]'> صفحه اصلی </NavLink>
                             <NavLink to='/courses' className='block border-b-2 bg-white hover:bg-gray-100 h-[35px]'> دوره </NavLink>
