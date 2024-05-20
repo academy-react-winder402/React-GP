@@ -156,12 +156,12 @@ const ProductB = () => {
 
   return (
     <div>
-      <div className="hidden xl:block my-[300px]">
+      <div className="my-[300px]">
         <div className="text-3xl font-bold text-center w-44 mx-auto"> همه مقاله ها </div>
-        <div className="mx-auto w-[1020px] justify-center mt-[100px] flex flex-wrap gap-[30px] mb-[30px]">
+        <div className="mx-auto w-[95%] justify-center mt-[100px] flex flex-wrap gap-[30px] mb-[30px]">
           {slid.map((item) => {
             return (
-              <div className="shadow-[0px_0px_7px_2px_rgba(0,0,0,0.2)] py-[20px] rounded-3xl w-[310px]">
+              <div className="shadow-[0px_0px_7px_2px_rgba(0,0,0,0.2)] py-[20px] rounded-3xl w-[300px]">
                 <img className="w-[270px] h-[170px] mx-auto" src={item.src} />
                 <h2 className="text-center"> {item.fName} </h2>
                 <p className="w-[270px] text-center text-xs font-semibold mx-auto">

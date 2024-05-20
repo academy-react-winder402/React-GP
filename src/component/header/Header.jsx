@@ -33,7 +33,7 @@ const Header = () => {
                     <div onClick={handleClick} className="absolute right-[50px]">
                         <img className="bg-blue-500 w-[30px] h-[30px] p-[3px] rounded-md text-center pt-[5px]" src="more.png"/>
                         <div className={menu}>
-                            <NavLink className="w-[100px] h-[35px] border-b-2 bg-white hover:bg-gray-100"> ورود / ثبت نام </NavLink>
+                            <NavLink to='/register' className="w-[100px] h-[35px] border-b-2 bg-white hover:bg-gray-100"> ورود / ثبت نام </NavLink>
                             <NavLink to='/' className='w-[100px] block h-[35px] border-b-2 bg-white hover:bg-gray-100'> صفحه اصلی </NavLink>
                             <NavLink to='/courses' className='block h-[35px] border-b-2 bg-white hover:bg-gray-100'> دوره </NavLink>
                             <NavLink className='block h-[35px] border-b-2 bg-white hover:bg-gray-100'> مقالات </NavLink>
@@ -50,7 +50,7 @@ const Header = () => {
                     <div onClick={handleClick} className="absolute right-[50px] bg-white">
                         <img className="bg-blue-500 w-[30px] h-[30px] p-[3px] rounded-md" src="more.png"/>
                         <div className={menu}>
-                            <NavLink className="w-[100px] h-[35px] border-b-2 bg-white hover:bg-gray-100 text-center pt-[5px]"> ورود / ثبت نام </NavLink>
+                            <NavLink to='/register' className="w-[100px] h-[35px] border-b-2 bg-white hover:bg-gray-100 text-center pt-[5px]"> ورود / ثبت نام </NavLink>
                             <NavLink to='/' className='w-[100px] block h-[35px] border-b-2 bg-white hover:bg-gray-100'> صفحه اصلی </NavLink>
                             <NavLink to='/courses' className='block h-[35px] border-b-2 bg-white hover:bg-gray-100'> دوره </NavLink>
                             <NavLink className='block h-[35px] border-b-2 bg-white hover:bg-gray-100'> مقالات </NavLink>
@@ -75,7 +75,7 @@ const Header = () => {
                         </div>
                     </div>
                     <h1 className="mr-[40%]"> BAHR ACADEMY </h1>
-                    <NavLink className="absolute left-[50px] w-[170px] border-2 h-10 bg-blue-700 text-white text-center pt-[5px] rounded-full pb-[5px]"> ورود / ثبت نام </NavLink>
+                    <NavLink to='/register' className="absolute left-[50px] w-[170px] border-2 h-10 bg-blue-700 text-white text-center pt-[5px] rounded-full pb-[5px]"> ورود / ثبت نام </NavLink>
                 </div>  
             </div>
 
@@ -89,7 +89,7 @@ const Header = () => {
                         <NavLink className='text-white'> اساتید </NavLink>
                         <NavLink className='w-[80px] text-white'> ارتباط با ما </NavLink>
                     </div>
-                    <NavLink className="absolute left-[50px] w-[160px] border-2 h-10 bg-blue-700 text-white text-center pt-[5px] rounded-full pb-[5px]"> ورود / ثبت نام </NavLink>
+                    <NavLink to='/register' className="absolute left-[50px] w-[160px] border-2 h-10 bg-blue-700 text-white text-center pt-[5px] rounded-full pb-[5px]"> ورود / ثبت نام </NavLink>
                 </div>  
             </div>
 
@@ -116,9 +116,6 @@ const Header = () => {
                 </div> 
             </div>
 
-
-
-            
         </div>
      );
 }

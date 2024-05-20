@@ -33,7 +33,7 @@ const ProductA = () => {
             <h2 className="text-3xl font-bold">  همه دوره ها  </h2>
             <img className="h-10 w-10" src={paein}/>
         </div>
-        <div className="mx-auto justify-center w-[80%] mt-[50px] flex flex-wrap gap-[30px]">
+        <div className="mx-auto justify-center w-[95%] mt-[50px] flex flex-wrap gap-[30px]">
           {slide.map((item) => {
             return (
               <div className="shadow-[0px_0px_7px_2px_rgba(0,0,0,0.2)] py-[20px] px-[20px] rounded-3xl w-[300px]">
