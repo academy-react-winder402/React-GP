@@ -5,6 +5,8 @@ import Courses from "../Screen/courses/courses";
 import LoginComponent from "../component/Logincomponent/LoginComponent";
 import ForgetPass from "../component/forgetPass/ForgetPass";
 import NewRegister from "../component/Register/NewRegister";
+import ProductA from "../component/ProductComponent/productA";
+import ProductB from "../component/ProductComponent/productB";
 
 const Routes = () => {
 
@@ -20,6 +22,14 @@ const Routes = () => {
                 {
                     path:'/courses',
                     element:<Courses />            
+                },
+                {
+                    path:'/producta',
+                    element:<ProductA/>           
+                },
+                {
+                    path:'/productb',
+                    element:<ProductB/>           
                 },
             ]
         },
