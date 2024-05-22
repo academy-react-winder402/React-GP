@@ -1,39 +1,7 @@
-.map {
-    width: 1000px;
-    height: 250px;
-    /* display: inline-block;*/
-    position: relative;
-    left: 0;
-    bottom: 0;
-    float: left;
+.curved-top-left {
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
 }
 
-
-/* .curve {
-    width: 1000px;
-    height: 100px;
-    position: absolute;
-    left: 0;
-    bottom: -500px;
-    background-color: red;
-} */
-
-.map::before {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    transform: translate(85%, 60%);
-}
-
-.map::after {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    transform: translate(-4%, 40%);
+.curved-bottom-right {
+    clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
 }
