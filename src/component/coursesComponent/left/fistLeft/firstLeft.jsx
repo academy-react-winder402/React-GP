@@ -1,4 +1,4 @@
-const FirstLeft = () => {
+const FirstLeft = ({cost , courseLevelName , classRoomName , endTime}) => {
     
     return (
         <div>
@@ -7,25 +7,25 @@ const FirstLeft = () => {
                     <h2 className="font-bold text-center mb-9"> اطلاعات دوره </h2>
                     <div className="flex justify-between mb-10 flex-wrap">
                         <h2 className="font-bold"> مدت زمان : </h2>
-                        <p className=''> 3 ساعت و 55 دقیقه </p>
+                        <p className=''>{endTime}</p>
                     </div>
                     <div className="flex justify-between mb-5 flex-wrap">
                         <h2 className="font-bold ml-[5%]"> هزینه آموزش: </h2>
                         <price className=' line-through text-red-600 ml-[2%]'>  48000  </price>
-                        <price className=' text-green-600'> T 48000 </price>
+                        <price className=' text-green-600'> T {cost} </price>
                     </div>
                     <div className="flex justify-between mb-5 flex-wrap">
                         <h2 className="font-bold"> سطح دوره : </h2>
-                        <p className='t'> پیشرفته </p>
+                        <p className='t'> {courseLevelName} </p>
                     </div>
                     <div className="mb-5 flex justify-between flex-wrap">
                         <h2 className="font-bold"> تاریخ بهروز رسانی : </h2>
-                        <p className=""> 24 / 05 / 1400 </p>
+                        <p className="">{}</p>
                     </div>
 
                     <div className="flex justify-between mb-7 flex-wrap">
                         <h2 className="font-bold"> تعداد ویدیو ها : </h2>
-                        <p className=''> 26 ویدیو </p>
+                        <p className=''>{}</p>
                     </div>
                     <div className="mx-auto w-[80%] h-11">
                         <button className="w-full h-full bg-blue-600 text-white rounded-full"> خرید دوره </button>
@@ -38,25 +38,25 @@ const FirstLeft = () => {
                     <h2 className="font-bold text-center mb-9"> اطلاعات دوره </h2>
                     <div className="flex justify-between mb-10 flex-wrap">
                         <h2 className="font-bold"> مدت زمان : </h2>
-                        <p className=''> 3 ساعت و 55 دقیقه </p>
+                        <p className=''>{endTime}</p>
                     </div>
                     <div className="flex justify-between mb-5 flex-wrap">
                         <h2 className="font-bold ml-[5%]"> هزینه آموزش: </h2>
-                        <price className=' line-through text-red-600 ml-[2%]'>  48000  </price>
-                        <price className=' text-green-600'> T 48000 </price>
+                        {/* <price className=' line-through text-red-600 ml-[2%]'>  48000  </price> */}
+                        <price className=' text-green-600'> T {cost} </price>
                     </div>
                     <div className="flex justify-between mb-5 flex-wrap">
                         <h2 className="font-bold"> سطح دوره : </h2>
-                        <p className='t'> پیشرفته </p>
+                        <p className='t'> {courseLevelName} </p>
                     </div>
                     <div className="mb-5 flex justify-between flex-wrap">
                         <h2 className="font-bold"> تاریخ بهروز رسانی : </h2>
-                        <p className=""> 24 / 05 / 1400 </p>
+                        <p className="">{}</p>
                     </div>
 
                     <div className="flex justify-between mb-7 flex-wrap">
                         <h2 className="font-bold"> تعداد ویدیو ها : </h2>
-                        <p className=''> 26 ویدیو </p>
+                        <p className=''>{}</p>
                     </div>
                     <div className="mx-auto w-[80%] h-11">
                         <button className="w-full h-full bg-blue-600 text-white rounded-full"> خرید دوره </button>
@@ -69,25 +69,25 @@ const FirstLeft = () => {
                     <h2 className="font-bold text-center mb-9"> اطلاعات دوره </h2>
                     <div className="flex justify-between mb-10 flex-wrap">
                         <h2 className="font-bold"> مدت زمان : </h2>
-                        <p className=''> 3 ساعت و 55 دقیقه </p>
+                        <p className=''>{endTime}</p>
                     </div>
                     <div className="flex justify-between mb-5 flex-wrap">
                         <h2 className="font-bold ml-[5%]"> هزینه آموزش: </h2>
-                        <price className=' line-through text-red-600 ml-[2%]'>  48000  </price>
-                        <price className=' text-green-600'> T 48000 </price>
+                        {/* <price className=' line-through text-red-600 ml-[2%]'>  48000  </price> */}
+                        <price className=' text-green-600'> T {cost} </price>
                     </div>
                     <div className="flex justify-between mb-5 flex-wrap">
                         <h2 className="font-bold"> سطح دوره : </h2>
-                        <p className='t'> پیشرفته </p>
+                        <p className='t'>{courseLevelName}</p>
                     </div>
                     <div className="mb-5 flex justify-between flex-wrap">
                         <h2 className="font-bold"> تاریخ بهروز رسانی : </h2>
-                        <p className=""> 24 / 05 / 1400 </p>
+                        <p className="">{}</p>
                     </div>
 
                     <div className="flex justify-between mb-7 flex-wrap">
                         <h2 className="font-bold"> تعداد ویدیو ها : </h2>
-                        <p className=''> 26 ویدیو </p>
+                        <p className=''>{}</p>
                     </div>
                     <div className="mx-auto w-[80%] h-11">
                         <button className="w-full h-full bg-blue-600 text-white rounded-full"> خرید دوره </button>
@@ -100,25 +100,25 @@ const FirstLeft = () => {
                     <h2 className="font-bold text-center mb-9"> اطلاعات دوره </h2>
                     <div className="flex justify-between mb-10 flex-wrap">
                         <h2 className="font-bold"> مدت زمان : </h2>
-                        <p className=''> 3 ساعت و 55 دقیقه </p>
+                        <p className=''>{endTime}</p>
                     </div>
                     <div className="flex justify-between mb-5 flex-wrap">
                         <h2 className="font-bold ml-[5%]"> هزینه آموزش: </h2>
-                        <price className=' line-through text-red-600 ml-[2%]'>  48000  </price>
-                        <price className=' text-green-600'> T 48000 </price>
+                        {/* <price className=' line-through text-red-600 ml-[2%]'>  48000  </price> */}
+                        <price className=' text-green-600'> T {cost} </price>
                     </div>
                     <div className="flex justify-between mb-5 flex-wrap">
                         <h2 className="font-bold"> سطح دوره : </h2>
-                        <p className='t'> پیشرفته </p>
+                        <p className='t'>{courseLevelName}</p>
                     </div>
                     <div className="mb-5 flex justify-between flex-wrap">
                         <h2 className="font-bold"> تاریخ بهروز رسانی : </h2>
-                        <p className=""> 24 / 05 / 1400 </p>
+                        <p className="">{}</p>
                     </div>
 
                     <div className="flex justify-between mb-7 flex-wrap">
                         <h2 className="font-bold"> تعداد ویدیو ها : </h2>
-                        <p className=''> 26 ویدیو </p>
+                        <p className=''>{}</p>
                     </div>
                     <div className="mx-auto w-[80%] h-11">
                         <button className="w-full h-full bg-blue-600 text-white rounded-full"> خرید دوره </button>
@@ -131,25 +131,25 @@ const FirstLeft = () => {
                     <h2 className="font-bold text-xl text-center mb-9"> اطلاعات دوره </h2>
                     <div className="flex justify-between mb-10 flex-wrap">
                         <h2 className="font-bold text-lg"> مدت زمان : </h2>
-                        <p className='text-lg'> 3 ساعت و 55 دقیقه </p>
+                        <p className='text-lg'> {endTime} </p>
                     </div>
                     <div className="flex justify-between mb-5 flex-wrap">
                         <h2 className="font-bold text-lg ml-[5%]"> هزینه آموزش: </h2>
-                        <price className='text-lg line-through text-red-600 ml-[2%]'>  48000  </price>
-                        <price className='text-lg text-green-600'> T 48000 </price>
+                        {/* <price className='text-lg line-through text-red-600 ml-[2%]'>  48000  </price> */}
+                        <price className='text-lg text-green-600'> T {cost} </price>
                     </div>
                     <div className="flex justify-between mb-5 flex-wrap">
                         <h2 className="font-bold text-lg"> سطح دوره : </h2>
-                        <p className='text-lg'> پیشرفته </p>
+                        <p className='text-lg'> {courseLevelName} </p>
                     </div>
                     <div className="mb-5 flex justify-between flex-wrap">
                         <h2 className="font-bold text-lg"> تاریخ بهروز رسانی : </h2>
-                        <p className="text-lg"> 24 / 05 / 1400 </p>
+                        <p className="text-lg"> {} </p>
                     </div>
 
                     <div className="flex justify-between mb-14 flex-wrap">
                         <h2 className="font-bold text-lg"> تعداد ویدیو ها : </h2>
-                        <p className='text-lg'> 26 ویدیو </p>
+                        <p className='text-lg'> {} </p>
                     </div>
                     <div className="mx-auto w-[80%] h-11">
                         <button className="w-full h-full bg-blue-600 text-white rounded-full"> خرید دوره </button>

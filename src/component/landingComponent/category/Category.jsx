@@ -4,6 +4,8 @@ import img2 from "../../../../public/communication-and-connectivity-1 (4) 1.png"
 import img3 from "../../../../public/communication-and-connectivity-1 (3) 1.png";
 import img4 from "../../../../public/communication-and-connectivity-1 (2) 1.png";
 import img5 from "../../../../public/communication-and-connectivity-1 (1) 1.png";
+import axios from "axios";
+import { useQuery } from "react-query";
 
 const Category =()=>{
 
