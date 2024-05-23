@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import profile from '../../../public/Vector profile.png'
+import {  NavLink, useLocation } from "react-router-dom";
 
 
 const Header = () => {

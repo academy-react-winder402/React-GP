@@ -1,5 +1,10 @@
+import Righti from "./righti/Righti";
+import Lefti from "./lefti/Lefti";
 const Connect=()=>{
     return(
-<h1>ارتباط با ما</h1>
+<div className="flex">
+    <Righti />
+    <Lefti />
+</div>
 )};
 export default Connect;
