@@ -2,16 +2,27 @@ import sun from "../../../public/icons8-sun-48.png";
 import lag from "../../../public/mobile-testing.png";
 import home from "../../../public/icons8-home-32.png";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import * as Yup from "yup";
+import http from '../../core/services/interceptore'
+import { setItem } from "../../core/common/storage.services";
 
 const LoginComponent = () => {
+  const navigate = useNavigate()
   const windowHeight = window.innerHeight;
 
   const validation = Yup.object().shape({
     username: Yup.string().required("نام کاربری را وارد کنید"),
     password: Yup.string().required("رمز عبور را وارد کنید"),
   });
+
+  const handleLogin =async (values) =>{
+
+    const res = await http.post('https://classapi.sepehracademy.ir/api/Sign/Login' , values)
+    setItem("token", res.token);
+    console.log(res)
+    navigate('/')
+  }
 
   return (
     <>
@@ -356,8 +367,8 @@ const LoginComponent = () => {
                     ورود به سایت
                   </h1>
                   <Formik
-                    initialValues={{ username: "" }}
-                    validationSchema={validation}
+                    initialValues={{ phoneOrGmail: "", password: "", rememberMe: false }}
+                    onSubmit={handleLogin}
                   >
                     <Form className="flex flex-col items-center gap-[16px]">
                       <div className="w-[60%]">
@@ -365,19 +376,25 @@ const LoginComponent = () => {
                           نام کاربری و رمز عبور خود را وارد کنید
                         </p>
                         <Field
-                          name="username"
+                          name="phoneOrGmail"
                           type="text"
                           placeholder="شماره موبایل یا ایمیل"
                           className="w-[100%] h-[44px] mb-[16px] rounded-[10px] pr-[10px]"
                         />
                         <ErrorMessage name="username"></ErrorMessage>
+
                         <Field
                           name="password"
-                          type="text"
+                          type="password"
                           placeholder="رمز عبور"
                           className="w-[100%] h-[44px] mb-[16px] rounded-[10px] pr-[10px]"
                         />
                         <ErrorMessage name="username"></ErrorMessage>
+
+                        <label htmlFor="">
+                          <Field type="checkbox" name='rememberMe' className="text-white text-[14px] font-normal my-auto"/>
+                          مرا به خاطر بسپار
+                        </label>
 
                         <div>
                           <div className="w-[30%] mr-auto">
@@ -388,7 +405,7 @@ const LoginComponent = () => {
                               فراموشی رمز؟
                             </Link>
                           </div>
-                          <div className="flex">
+                          {/* <div className="flex">
                             <input
                               type="checkbox"
                               className="w-[20px] h-[20px]"
@@ -396,16 +413,16 @@ const LoginComponent = () => {
                             <p className="text-white text-[14px] font-normal my-auto">
                               مرا به خاطر بسپار
                             </p>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
 
-                      <Link
-                        to="/"
+                      <button
+                        type="submit"
                         className="w-[40%] h-[40px] bg-[#732AFF] text-[#FFFFFF] rounded-full mt-[24px] text-center pt-1"
                       >
                         ورود
-                      </Link>
+                      </button>
                     </Form>
                   </Formik>
                 </div>

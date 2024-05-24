@@ -1,3 +1,4 @@
+import axios from "axios";
 import Product from "../landingComponent/products/product";
 import EndLeft from "./left/EndLeft/endLeft";
 import FirstLeft from "./left/fistLeft/firstLeft";
@@ -6,23 +7,51 @@ import FirstRight from "./right/firstRight/firstRight";
 import Nazarat from "./right/nazarat/nazarat";
 import RightToz from "./right/rightToz";
 import Slide from "./right/slid2/slid2";
-//ttt
+import { useQuery } from "react-query";
+import { useParams } from "react-router-dom";
+import http from '../../core/services/interceptore'
+
+
 const CoursesList = () => {
+
+  const params =useParams()
+ 
+
+  const getCoursDetal =async () => {
+    const res =await http.get(`/Home/GetCourseDetails?CourseId=${params.id}`)
+    return res
+  }
+
+  const {data} =useQuery('coursDetal' , getCoursDetal)
+
+ 
+
   return (
     <div>
       <div className="block sm:hidden">
         <h1 className="font-bold text-xl mr-14 mt-[100px]">
           {" "}
-          دوره پیشرفته هک و امنیت{" "}
+          {data?.title}
         </h1>
-        <RightToz />
+        <RightToz imageAddress={data?.imageAddress}
+          googleTitle={data?.googleTitle}
+          googleSchema={data?.googleSchema}
+          describe={data?.describe}       
+          miniDescribe={data?.miniDescribe}   
+          techs={data?.techs}
+          uniqeUrlString={data?.uniqeUrlString} 
+        />
         <FirstRight />
         <div className="flex flex-wrap justify-between gap-[10px] mx-[5%]">
           <div>
               <Left />
-              <EndLeft />
+              <EndLeft teacherName={data?.teacherName} />
           </div>
-            <FirstLeft />
+            <FirstLeft 
+              endTime={data?.endTime}
+              cost={data?.cost} 
+              courseLevelName={data?.courseLevelName} 
+            />
         </div>
         <Slide />
         <Nazarat />
@@ -31,14 +60,25 @@ const CoursesList = () => {
       <div className="hidden sm:block md:hidden">
         <h1 className="font-bold text-xl mr-14 mt-[100px]">
           {" "}
-          دوره پیشرفته هک و امنیت{" "}
+          {data?.title}{" "}
         </h1>
-        <RightToz />
+        <RightToz imageAddress={data?.imageAddress}
+          googleTitle={data?.googleTitle}
+          googleSchema={data?.googleSchema}
+          describe={data?.describe}       
+          miniDescribe={data?.miniDescribe}   
+          techs={data?.techs}
+          uniqeUrlString={data?.uniqeUrlString} 
+        />
         <FirstRight />
         <div className="flex flex-wrap justify-center gap-[15px]">
             <Left />
-            <FirstLeft />
-            <EndLeft />
+            <FirstLeft
+              endTime={data?.endTime}
+              cost={data?.cost} 
+              courseLevelName={data?.courseLevelName} 
+            />
+            <EndLeft teacherName={data?.teacherName} />
         </div>
         <Slide />
         <Nazarat />
@@ -47,17 +87,29 @@ const CoursesList = () => {
       <div className="hidden md:block">
         <h1 className="font-bold text-2xl mr-14 mt-[100px]">
           {" "}
-          دوره پیشرفته هک و امنیت{" "}
+          {data?.title}
+
         </h1>
         <div className="mx-auto flex gap-5 justify-center flex-wrap">
           <div className="w-[65%]">
-            <RightToz />
+            <RightToz imageAddress={data?.imageAddress}
+              googleTitle={data?.googleTitle}
+              googleSchema={data?.googleSchema}
+              describe={data?.describe}       
+              miniDescribe={data?.miniDescribe}   
+              techs={data?.techs}
+              uniqeUrlString={data?.uniqeUrlString}                 
+            />
             <FirstRight />
           </div>
           <div className="w-[25%]">
             <Left />
-            <FirstLeft />
-            <EndLeft />
+            <FirstLeft 
+              endTime={data?.endTime}
+              cost={data?.cost} 
+              courseLevelName={data?.courseLevelName} 
+            />
+            <EndLeft teacherName={data?.teacherName} />
           </div>
         </div>
         <div className="mt-36">

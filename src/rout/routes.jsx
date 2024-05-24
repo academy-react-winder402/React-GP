@@ -9,6 +9,7 @@ import ForgetPass from "../component/forgetPass/ForgetPass";
 import NewRegister from "../component/Register/NewRegister";
 import ProductA from "../component/ProductComponent/productA";
 import ProductB from "../component/ProductComponent/productB";
+import DPanel from "../component/PanelComponent/DPanel/DPanel";
 
 const Routes = () => {
 
@@ -22,7 +23,7 @@ const Routes = () => {
                     element:<Landing />
                 },
                 {
-                    path:'/courses',
+                    path:'/courses/:id',
                     element:<Courses />            
                 },
                 {
@@ -54,6 +55,10 @@ const Routes = () => {
         {
             path:'/forgetpass',
             element:<ForgetPass/>
+        },
+        {
+            path:'/dpanel',
+            element:<DPanel/>
         },
     ])
 

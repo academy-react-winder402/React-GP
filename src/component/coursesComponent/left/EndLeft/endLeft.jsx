@@ -5,7 +5,9 @@ import image4 from '../../../../../public/copy 1.png';
 import image5 from '../../../../../public/angle-down.png';
 import { NavLink } from 'react-router-dom';
 
-const EndLeft = () => {
+const EndLeft = ({teacherName}) => {
+
+
     return (
         <div>
             <div className='block sm:hidden'>
@@ -13,7 +15,7 @@ const EndLeft = () => {
                     <h2 className='font-bold text-center mb-4'> درباره استاد </h2>
                     <div className='flex justify-between px-[1%]'>
                         <img className='w-14 h-14' src={image1}/>
-                        <p className='mt-6'> مبینا حسین پور</p>
+                        <p className='mt-6'> {teacherName} </p>
                         <img className='w-8 h-8 mt-6' src={image5}/>
                     </div>
                 </div>
@@ -35,7 +37,7 @@ const EndLeft = () => {
                     <h2 className='font-bold text-center mb-4'> درباره استاد </h2>
                     <div className='flex justify-between px-[1%]'>
                         <img className='w-14 h-14' src={image1}/>
-                        <p className='mt-6'> مبینا حسین پور</p>
+                        <p className='mt-6'>{teacherName}</p>
                         <img className='w-8 h-8 mt-6' src={image5}/>
                     </div>
                 </div>
@@ -57,7 +59,7 @@ const EndLeft = () => {
                     <h2 className='font-bold text-center mb-4'> درباره استاد </h2>
                     <div className='flex justify-between px-[1%]'>
                         <img className='w-14 h-14' src={image1}/>
-                        <p className='mt-6'> مبینا حسین پور</p>
+                        <p className='mt-6'> {teacherName} </p>
                         <img className='w-8 h-8 mt-6' src={image5}/>
                     </div>
                 </div>
@@ -79,7 +81,7 @@ const EndLeft = () => {
                     <h2 className='text-xl font-bold text-center mb-4'> درباره استاد </h2>
                     <div className='flex justify-between px-[5%]'>
                         <img className='w-16 h-16' src={image1}/>
-                        <p className='mt-6'> مبینا حسین پور</p>
+                        <p className='mt-6'> {teacherName} </p>
                         <img className='w-8 h-8 mt-6' src={image5}/>
                     </div>
                 </div>
@@ -101,7 +103,7 @@ const EndLeft = () => {
                     <h2 className='text-xl font-bold text-center mb-4'> درباره استاد </h2>
                     <div className='flex justify-center'>
                         <img className='w-20 h-20 ml-[5%]' src={image1}/>
-                        <p className='ml-[25%] mt-6'> مبینا حسین پور</p>
+                        <p className='ml-[25%] mt-6'> {teacherName} </p>
                         <img className='w-8 h-8 mt-6' src={image5}/>
                     </div>
                 </div>

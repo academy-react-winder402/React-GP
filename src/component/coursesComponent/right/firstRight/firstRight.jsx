@@ -1,4 +1,4 @@
-import group117 from '../../../../../public/Group117.png'
+import group117 from '../../../../../public/Rectangle219.png'
 import polygon2 from '../../../../../public/Polygon2.png'
 import import1 from '../../../../../public/import1.png'
 import lock2 from '../../../../../public/lock 2.png'
