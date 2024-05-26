@@ -10,7 +10,7 @@ const validationSchema = Yup.object({
     firstName: Yup.string().required('نام لازم است'),
     lastName: Yup.string().required('نام خانوادگی لازم است'),
     nationalCode: Yup.string().required('کدملی لازم است'),
-    email: Yup.string().email('ایمیل نامعتبر است').required('ایمیل لازم است'),
+    email: Yup.string().email().required('ایمیل لازم است'),
     birthDate: Yup.string().required('تاریخ تولد لازم است'),
     mobileNumber: Yup.string().required('شماره موبایل لازم است'),
 });
