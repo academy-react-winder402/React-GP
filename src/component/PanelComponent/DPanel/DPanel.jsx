@@ -11,39 +11,19 @@ import img3 from "../../../../public/PanelDaneshJoo/ebook-svgrepo-com.png";
 import img4 from "../../../../public/PanelDaneshJoo/key-alt-svgrepo-com.png";
 import img5 from "../../../../public/PanelDaneshJoo/power-off-svgrepo-com.png";
 import img6 from "../../../../public/PanelDaneshJoo/comment-line-svgrepo-com.png";
+import home from "../../../../public/PanelDaneshJoo/home-4-svgrepo-com.png";
+import { NavLink } from "react-router-dom";;
+import MyCourses from "../MyCourses/MyCourses";
 
 const DPanel = () => {
   const [Count, setCount] = useState(1);
 
-  const [slide, setSlide] = useState([
-    {
-      src: aks,
-      name: "آموزش رایگان html",
-      ostadName: "دکتر بحرالعلوم",
-      pir: "500000",
-    },
-    {
-      src: aks,
-      name: "آموزش رایگان html",
-      ostadName: "دکتر بحرالعلوم",
-      pir: "500000",
-    },
-  ]);
-
-  const [slides, setSlides] = useState([
-    {
-      src: aks,
-      name: "آموزش رایگان html",
-      ostadName: "دکتر بحرالعلوم",
-      pir: "500000",
-    },
-    {
-      src: aks,
-      name: "آموزش رایگان html",
-      ostadName: "دکتر بحرالعلوم",
-      pir: "500000",
-    },
-  ]);
+  const handleTwo =() => {
+    setCount(2)
+  }
+  const handleOne =() => {
+    setCount(1)
+}
 
   const windowHeight = window.innerHeight;
   return (
@@ -52,8 +32,11 @@ const DPanel = () => {
         <div className="h-[97%] w-[97%] flex justify-between rounded-xl mx-auto">
           <div className="w-[25%] h-full bg-blue-600 rounded-xl">
             <div>
+              <NavLink to='/'>
+                <img className="mt-[15px] mr-[20px] w-7 h-7" src={home} alt="" />
+              </NavLink>
               <img
-                className="w-[150px] h-[150px] mx-auto mt-[50px]"
+                className="w-[150px] h-[150px] mx-auto mt-[30px]"
                 src={profileAks}
               />
               <h2 className="font-semibold text-xl flex justify-center mt-[10px] text-white">
@@ -61,34 +44,39 @@ const DPanel = () => {
                 بیتا قنبری{" "}
               </h2>
             </div>
-            <div className=" border-t-[1px] border-t-white mt-[20px] w-[90%] mx-auto pt-[50px]">
-              <div className="flex gap-5 mb-5">
+            <div className=" border-t-[1px] border-t-white mt-[20px] w-[90%] mx-auto pt-[20px]">
+              <div onClick={handleOne} className="flex gap-5 mb-1 py-[7px] pr-[10px] h-[50px] rounded-2xl cursor-pointer">
                 <img className="w-8 h-8" src={img1} />
                 <h2 className="text-xl text-white"> داشبورد </h2>
               </div>
-              <div className="flex gap-5 mb-5">
+              <div className="flex gap-5 mb-1 py-[7px] pr-[10px] h-[50px] rounded-2xl cursor-pointer">
                 <img className="w-8 h-8" src={img2} />
                 <h2 className="text-xl text-white"> ویرایش پروفایل </h2>
               </div>
-              <div className="flex gap-5 mb-5">
+              <div onClick={handleTwo} className="flex gap-5 mb-1 py-[7px] pr-[10px] h-[50px] rounded-2xl cursor-pointer">
                 <img className="w-8 h-8" src={img3} />
                 <h2 className="text-xl text-white"> دوره های من </h2>
               </div>
-              <div className="flex gap-5 mb-5">
+              <div className="flex gap-5 mb-1 py-[7px] pr-[10px] h-[50px] rounded-2xl cursor-pointer">
                 <img className="w-8 h-8" src={img4} />
                 <h2 className="text-xl text-white"> تغییر رمز </h2>
               </div>
-              <div className="flex gap-5 mb-5">
+              <div className="flex gap-5 mb-1 py-[7px] pr-[10px] h-[50px] rounded-2xl cursor-pointer">
                 <img className="w-8 h-8" src={img5} />
                 <h2 className="text-xl text-white"> خروج از حساب </h2>
               </div>
-              <div className="flex gap-5 mb-5">
+              <div className="flex gap-5 mb-1 py-[7px] pr-[10px] h-[50px] rounded-2xl cursor-pointer">
                 <img className="w-8 h-8" src={img6} />
                 <h2 className="text-xl text-white"> نظرات ثبت شده </h2>
               </div>
             </div>
           </div>
-          {Count === 1 && <Dashboard />}
+          {Count === 1 && (
+            <Dashboard setCount={setCount} />
+          )}
+          {Count === 2 && (
+            <MyCourses setCount={setCount} />
+          )}
         </div>
       </div>
     </div>

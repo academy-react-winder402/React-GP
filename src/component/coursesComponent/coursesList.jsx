@@ -15,7 +15,6 @@ import http from '../../core/services/interceptore'
 const CoursesList = () => {
 
   const params =useParams()
- 
 
   const getCoursDetal =async () => {
     const res =await http.get(`/Home/GetCourseDetails?CourseId=${params.id}`)
@@ -23,8 +22,6 @@ const CoursesList = () => {
   }
 
   const {data} =useQuery('coursDetal' , getCoursDetal)
-
- 
 
   return (
     <div>
@@ -86,9 +83,7 @@ const CoursesList = () => {
 
       <div className="hidden md:block">
         <h1 className="font-bold text-2xl mr-14 mt-[100px]">
-          {" "}
           {data?.title}
-
         </h1>
         <div className="mx-auto flex gap-5 justify-center flex-wrap">
           <div className="w-[65%]">

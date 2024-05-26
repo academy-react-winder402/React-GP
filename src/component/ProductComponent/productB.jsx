@@ -8,162 +8,163 @@ import calendar from "../../../public/calendar-alt 1.png";
 import axios from "axios";
 import { useQuery } from "react-query";
 import http from '../../core/services/interceptore'
+import { NavLink } from "react-router-dom";
 
 
 const ProductB = () => {
-  const [slid, setSlid] = useState([
-    {
-      src: intersect2,
-      fName: "متن تست",
-      lName:
-        "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
-      usSrc: user,
-      usMatn: "امیر همتی",
-      vicSrc: victor,
-      vicMatn: "354",
-      calSrc: calendar,
-      calMatn: "15 تیر 1400",
-    },
-    {
-      src: intersect2,
-      fName: "متن تست",
-      lName:
-        "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
-      usSrc: user,
-      usMatn: "امیر همتی",
-      vicSrc: victor,
-      vicMatn: "354",
-      calSrc: calendar,
-      calMatn: "15 تیر 1400",
-    },
-    {
-      src: intersect2,
-      fName: "متن تست",
-      lName:
-        "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
-      usSrc: user,
-      usMatn: "امیر همتی",
-      vicSrc: victor,
-      vicMatn: "354",
-      calSrc: calendar,
-      calMatn: "15 تیر 1400",
-    },
-    {
-      src: intersect2,
-      fName: "متن تست",
-      lName:
-        "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
-      usSrc: user,
-      usMatn: "امیر همتی",
-      vicSrc: victor,
-      vicMatn: "354",
-      calSrc: calendar,
-      calMatn: "15 تیر 1400",
-    },
-    {
-      src: intersect2,
-      fName: "متن تست",
-      lName:
-        "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
-      usSrc: user,
-      usMatn: "امیر همتی",
-      vicSrc: victor,
-      vicMatn: "354",
-      calSrc: calendar,
-      calMatn: "15 تیر 1400",
-    },
-    {
-      src: intersect2,
-      fName: "متن تست",
-      lName:
-        "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
-      usSrc: user,
-      usMatn: "امیر همتی",
-      vicSrc: victor,
-      vicMatn: "354",
-      calSrc: calendar,
-      calMatn: "15 تیر 1400",
-    },
-    {
-      src: intersect2,
-      fName: "متن تست",
-      lName:
-        "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
-      usSrc: user,
-      usMatn: "امیر همتی",
-      vicSrc: victor,
-      vicMatn: "354",
-      calSrc: calendar,
-      calMatn: "15 تیر 1400",
-    },
-    {
-      src: intersect2,
-      fName: "متن تست",
-      lName:
-        "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
-      usSrc: user,
-      usMatn: "امیر همتی",
-      vicSrc: victor,
-      vicMatn: "354",
-      calSrc: calendar,
-      calMatn: "15 تیر 1400",
-    },
-    {
-      src: intersect2,
-      fName: "متن تست",
-      lName:
-        "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
-      usSrc: user,
-      usMatn: "امیر همتی",
-      vicSrc: victor,
-      vicMatn: "354",
-      calSrc: calendar,
-      calMatn: "15 تیر 1400",
-    },
-    {
-      src: intersect2,
-      fName: "متن تست",
-      lName:
-        "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
-      usSrc: user,
-      usMatn: "امیر همتی",
-      vicSrc: victor,
-      vicMatn: "354",
-      calSrc: calendar,
-      calMatn: "15 تیر 1400",
-    },
-    {
-      src: intersect2,
-      fName: "متن تست",
-      lName:
-        "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
-      usSrc: user,
-      usMatn: "امیر همتی",
-      vicSrc: victor,
-      vicMatn: "354",
-      calSrc: calendar,
-      calMatn: "15 تیر 1400",
-    },
-    {
-      src: intersect2,
-      fName: "متن تست",
-      lName:
-        "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
-      usSrc: user,
-      usMatn: "امیر همتی",
-      vicSrc: victor,
-      vicMatn: "354",
-      calSrc: calendar,
-      calMatn: "15 تیر 1400",
-    },
-  ]);
+  // const [slid, setSlid] = useState([
+  //   {
+  //     src: intersect2,
+  //     fName: "متن تست",
+  //     lName:
+  //       "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
+  //     usSrc: user,
+  //     usMatn: "امیر همتی",
+  //     vicSrc: victor,
+  //     vicMatn: "354",
+  //     calSrc: calendar,
+  //     calMatn: "15 تیر 1400",
+  //   },
+  //   {
+  //     src: intersect2,
+  //     fName: "متن تست",
+  //     lName:
+  //       "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
+  //     usSrc: user,
+  //     usMatn: "امیر همتی",
+  //     vicSrc: victor,
+  //     vicMatn: "354",
+  //     calSrc: calendar,
+  //     calMatn: "15 تیر 1400",
+  //   },
+  //   {
+  //     src: intersect2,
+  //     fName: "متن تست",
+  //     lName:
+  //       "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
+  //     usSrc: user,
+  //     usMatn: "امیر همتی",
+  //     vicSrc: victor,
+  //     vicMatn: "354",
+  //     calSrc: calendar,
+  //     calMatn: "15 تیر 1400",
+  //   },
+  //   {
+  //     src: intersect2,
+  //     fName: "متن تست",
+  //     lName:
+  //       "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
+  //     usSrc: user,
+  //     usMatn: "امیر همتی",
+  //     vicSrc: victor,
+  //     vicMatn: "354",
+  //     calSrc: calendar,
+  //     calMatn: "15 تیر 1400",
+  //   },
+  //   {
+  //     src: intersect2,
+  //     fName: "متن تست",
+  //     lName:
+  //       "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
+  //     usSrc: user,
+  //     usMatn: "امیر همتی",
+  //     vicSrc: victor,
+  //     vicMatn: "354",
+  //     calSrc: calendar,
+  //     calMatn: "15 تیر 1400",
+  //   },
+  //   {
+  //     src: intersect2,
+  //     fName: "متن تست",
+  //     lName:
+  //       "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
+  //     usSrc: user,
+  //     usMatn: "امیر همتی",
+  //     vicSrc: victor,
+  //     vicMatn: "354",
+  //     calSrc: calendar,
+  //     calMatn: "15 تیر 1400",
+  //   },
+  //   {
+  //     src: intersect2,
+  //     fName: "متن تست",
+  //     lName:
+  //       "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
+  //     usSrc: user,
+  //     usMatn: "امیر همتی",
+  //     vicSrc: victor,
+  //     vicMatn: "354",
+  //     calSrc: calendar,
+  //     calMatn: "15 تیر 1400",
+  //   },
+  //   {
+  //     src: intersect2,
+  //     fName: "متن تست",
+  //     lName:
+  //       "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
+  //     usSrc: user,
+  //     usMatn: "امیر همتی",
+  //     vicSrc: victor,
+  //     vicMatn: "354",
+  //     calSrc: calendar,
+  //     calMatn: "15 تیر 1400",
+  //   },
+  //   {
+  //     src: intersect2,
+  //     fName: "متن تست",
+  //     lName:
+  //       "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
+  //     usSrc: user,
+  //     usMatn: "امیر همتی",
+  //     vicSrc: victor,
+  //     vicMatn: "354",
+  //     calSrc: calendar,
+  //     calMatn: "15 تیر 1400",
+  //   },
+  //   {
+  //     src: intersect2,
+  //     fName: "متن تست",
+  //     lName:
+  //       "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
+  //     usSrc: user,
+  //     usMatn: "امیر همتی",
+  //     vicSrc: victor,
+  //     vicMatn: "354",
+  //     calSrc: calendar,
+  //     calMatn: "15 تیر 1400",
+  //   },
+  //   {
+  //     src: intersect2,
+  //     fName: "متن تست",
+  //     lName:
+  //       "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
+  //     usSrc: user,
+  //     usMatn: "امیر همتی",
+  //     vicSrc: victor,
+  //     vicMatn: "354",
+  //     calSrc: calendar,
+  //     calMatn: "15 تیر 1400",
+  //   },
+  //   {
+  //     src: intersect2,
+  //     fName: "متن تست",
+  //     lName:
+  //       "ایده ای که با نام لورم ایپسوم شناخته می شور اشپسوم یا طرح نما و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اگر شما یک طراح هستین",
+  //     usSrc: user,
+  //     usMatn: "امیر همتی",
+  //     vicSrc: victor,
+  //     vicMatn: "354",
+  //     calSrc: calendar,
+  //     calMatn: "15 تیر 1400",
+  //   },
+  // ]);
 
-  const getNewslist =async () => {
+  const getNewsList =async () => {
     const res =await http.get('/News?PageNumber=1&RowsOfPage=10&SortingCol=InsertDate&SortType=DESC')
     return res
   }
 
-  const {data} = useQuery('newsList' , getNewslist)
+  const {data} = useQuery('newsList' , getNewsList)
 
   return (
     <div>
@@ -172,7 +173,7 @@ const ProductB = () => {
         <div className="mx-auto w-[95%] justify-center mt-[100px] flex flex-wrap gap-[30px] mb-[30px]">
           {data?.news.map((item) => {
             return (
-              <div className="shadow-[0px_0px_7px_2px_rgba(0,0,0,0.2)] py-[20px] rounded-3xl w-[300px]">
+              <NavLink to={`/articles/${item.id}`} className="shadow-[0px_0px_7px_2px_rgba(0,0,0,0.2)] py-[20px] rounded-3xl w-[300px]">
                 <img className="w-[270px] h-[170px] mx-auto" src={item.currentImageAddressTumb} />
                 <h2 className="text-center"> {item.title} </h2>
                 <p className="w-[270px] text-center text-xs font-semibold mx-auto">
@@ -200,7 +201,7 @@ const ProductB = () => {
                     {item.updateDate}{" "}
                   </h4>
                 </div>
-              </div>
+              </NavLink>
             );
           })}
         </div>
