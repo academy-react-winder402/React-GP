@@ -5,6 +5,7 @@ import elipse3 from '../../../../public/Ellipse 15.png';
 import axios from "axios";
 import { useQuery } from "react-query";
 import http from '../../../core/services/interceptore'
+import { Link, NavLink } from "react-router-dom";
 
 const Card = () => {
 
@@ -89,9 +90,9 @@ const Card = () => {
                     {data?.map((item) => {
                         return(
                             <div className="shadow-[0px_0px_7px_2px_rgba(0,0,0,0.2)] py-[20px] rounded-3xl w-[310px]">
-                                <img className="mb-[40px] mt-[-80px] w-[130px] h-[130px] mx-auto" src={item.src}/>
-                                <h2 className="text-center"> {item.fName} </h2>
-                                <p className="text-center"> {item.lName} </p>
+                                <img className="mb-[40px] mt-[-80px] w-[130px] h-[130px] mx-auto rounded-full" src={item.pictureAddress}/>
+                                <h2 className="text-center"> {item.fullName} </h2>
+                                <NavLink to={item.linkdinProfileLink} className="flex justify-center"> Linkedin Account </NavLink>
                             </div>
                         )
                     })}
