@@ -1,7 +1,7 @@
 import { useState } from "react";
 // import zangoole from '../../../../public/PanelDaneshJoo/icons8-bell-50.png'
 // import sabad from '../../../../public/PanelDaneshJoo/icons8-cart-64.png'
-import aks from "../../../../public/PanelDaneshJoo/react.png";
+// import aks from "../../../../public/PanelDaneshJoo/react.png";
 import Dashboard from "../Dashboard/Dashboard";
 // import CourseReserve from '../CourseReserve/CourseReserve';
 import profileAks from "../../../../public/PanelDaneshJoo/Mask Group 60.png";
