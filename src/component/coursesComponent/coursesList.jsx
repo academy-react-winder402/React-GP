@@ -21,7 +21,14 @@ const CoursesList = () => {
     return res
   }
 
+  const getCoursComment =async () => {
+    const res =await http.get(`/Course/GetCourseCommnets/${params.id}`)
+    console.log(res);
+    return res
+  }
+
   const {data} =useQuery('coursDetal' , getCoursDetal)
+  const {data:data2} = useQuery('coursComment' , getCoursComment)
 
   return (
     <div>

@@ -53,7 +53,7 @@ const DPanel = () => {
               </h2>
             </div>
             <div className=" border-t-[1px] border-t-white mt-[20px] w-[90%] mx-auto pt-[20px]">
-              <div onClick={handleOne} className="flex gap-5 mb-1 py-[7px] pr-[10px] h-[50px] rounded-2xl cursor-pointer">
+              <div onClick={()=>setCount(1)} className="flex gap-5 mb-1 py-[7px] pr-[10px] h-[50px] rounded-2xl cursor-pointer">
                 <img className="w-8 h-8" src={img1} />
                 <h2 className="text-xl text-white"> داشبورد </h2>
               </div>

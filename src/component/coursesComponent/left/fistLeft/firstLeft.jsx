@@ -138,18 +138,9 @@ const FirstLeft = ({cost , courseLevelName , classRoomName , endTime}) => {
                         {/* <price className='text-lg line-through text-red-600 ml-[2%]'>  48000  </price> */}
                         <price className='text-lg text-green-600'> T {cost} </price>
                     </div>
-                    <div className="flex justify-between mb-5 flex-wrap">
+                    <div className="flex justify-between mb-14 flex-wrap">
                         <h2 className="font-bold text-lg"> سطح دوره : </h2>
                         <p className='text-lg'> {courseLevelName} </p>
-                    </div>
-                    <div className="mb-5 flex justify-between flex-wrap">
-                        <h2 className="font-bold text-lg"> تاریخ بهروز رسانی : </h2>
-                        <p className="text-lg"> {} </p>
-                    </div>
-
-                    <div className="flex justify-between mb-14 flex-wrap">
-                        <h2 className="font-bold text-lg"> تعداد ویدیو ها : </h2>
-                        <p className='text-lg'> {} </p>
                     </div>
                     <div className="mx-auto w-[80%] h-11">
                         <button className="w-full h-full bg-blue-600 text-white rounded-full"> خرید دوره </button>
