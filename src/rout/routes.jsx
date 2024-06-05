@@ -2,9 +2,14 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Leyout from "./leyout";
 import Landing from "../Screen/landing/landing";
 import Courses from "../Screen/courses/courses";
+import Articles from "../Screen/articles/Articles";
+import Connecting from "../Screen/connecting/Connecting";
 import LoginComponent from "../component/Logincomponent/LoginComponent";
 import ForgetPass from "../component/forgetPass/ForgetPass";
 import NewRegister from "../component/Register/NewRegister";
+import ProductA from "../component/ProductComponent/productA";
+import ProductB from "../component/ProductComponent/productB";
+import DPanel from "../component/PanelComponent/DPanel/DPanel";
 
 const Routes = () => {
 
@@ -18,8 +23,24 @@ const Routes = () => {
                     element:<Landing />
                 },
                 {
-                    path:'/courses',
+                    path:'/courses/:id',
                     element:<Courses />            
+                },
+                {
+                    path:'/producta',
+                    element:<ProductA/>           
+                },
+                {
+                    path:'/productb',
+                    element:<ProductB/> 
+                },
+                {       
+                    path:'/articles/:id',
+                    element:<Articles />            
+                },
+                {
+                    path:'/connecting',
+                    element:<Connecting />            
                 },
             ]
         },
@@ -34,6 +55,10 @@ const Routes = () => {
         {
             path:'/forgetpass',
             element:<ForgetPass/>
+        },
+        {
+            path:'/dpanel',
+            element:<DPanel/>
         },
     ])
 

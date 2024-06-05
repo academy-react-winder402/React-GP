@@ -1,0 +1,75 @@
+*   [33ma7f1e0e[m[33m ([m[1;35mrefs/stash[m[33m)[m WIP on soheila1: 98067e4 last updadte1
+[31m|[m[32m\[m  
+[31m|[m * [33m543e579[m index on soheila1: 98067e4 last updadte1
+[31m|[m[31m/[m  
+[31m|[m * [33m07d4333[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge branch 'Amir/Dore'
+[31m|[m[31m/[m[34m|[m 
+[31m|[m * [33mbd51e34[m[33m ([m[1;31morigin/Amir/Dore[m[33m)[m finishtDiz
+[31m|[m * [33meebc512[m landingRespons
+[31m|[m * [33m8f4b2dd[m dore1
+* [34m|[m [33m98067e4[m[33m ([m[1;31morigin/soheila1[m[33m, [m[1;31morigin/soheila[m[33m, [m[1;32msoheila1[m[33m, [m[1;32mmain[m[33m)[m last updadte1
+* [34m|[m   [33m59a2478[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32msoheila[m[33m)[m Merge branch 'main' of https://github.com/academy-react-winder402/React-GP
+[34m|[m[36m\[m [34m\[m  
+[34m|[m [36m|[m[34m/[m  
+[34m|[m[34m/[m[36m|[m   
+[34m|[m *   [33m86b80e5[m Merge branch 'main' of https://github.com/academy-react-winder402/React-GP
+[34m|[m [1;31m|[m[1;32m\[m  
+[34m|[m [1;31m|[m *   [33m3840eba[m Merge branch 'main' of https://github.com/academy-react-winder402/React-GP
+[34m|[m [1;31m|[m [1;33m|[m[1;34m\[m  
+[34m|[m [1;31m|[m * [1;34m|[m [33mb09a099[m .
+[34m|[m [1;31m|[m * [1;34m|[m [33m3e934c1[m .
+[34m|[m * [1;34m|[m [1;34m|[m [33md071553[m .
+[34m|[m * [1;34m|[m [1;34m|[m [33m36f3d0e[m Merge branch 'main' of https://github.com/academy-react-winder402/React-GP
+* [1;34m|[m [1;34m|[m [1;34m|[m [33m307ead8[m Merge branch 'main' of https://github.com/academy-react-winder402/React-GP
+[1;34m|[m[1;34m/[m [1;34m/[m [1;34m/[m  
+* [1;34m|[m [1;34m|[m [33md991b5b[m fin
+* [1;34m|[m [1;34m|[m [33mac5ccc9[m aaa
+[1;34m|[m [1;34m|[m[1;34m/[m  
+[1;34m|[m[1;34m/[m[1;34m|[m   
+* [1;34m|[m   [33md30a448[m Merge branch 'Amir/dev'
+[1;35m|[m[1;36m\[m [1;34m\[m  
+[1;35m|[m * [1;34m|[m [33m01e5a49[m[33m ([m[1;31morigin/Amir/dev[m[33m)[m finishRigest
+[1;35m|[m * [1;34m|[m [33m51eb7df[m ttt
+* [1;36m|[m [1;34m|[m [33mff69d3c[m soheila
+* [1;36m|[m [1;34m|[m   [33m9571d38[m Merge pull request #4 from academy-react-winder402/soheila
+[31m|[m[32m\[m [1;36m\[m [1;34m\[m  
+* [32m\[m [1;36m\[m [1;34m\[m   [33m85685df[m Merge pull request #2 from academy-react-winder402/Amir/dev
+[33m|[m[1;36m\[m [32m\[m [1;36m\[m [1;34m\[m  
+[33m|[m [1;36m|[m [32m|[m[1;36m/[m [1;34m/[m  
+[33m|[m [1;36m|[m[1;36m/[m[32m|[m [1;34m|[m   
+[33m|[m * [32m|[m [1;34m|[m [33mce189a6[m log
+[33m|[m * [32m|[m [1;34m|[m [33m0cb3df1[m teghir
+* [34m|[m [32m|[m [1;34m|[m   [33m4438294[m Merge pull request #1 from academy-react-winder402/soheila
+[1;34m|[m[36m\[m [34m\[m [32m\[m [1;34m\[m  
+[1;34m|[m [36m|[m[1;34m_[m[34m|[m[1;34m_[m[32m|[m[1;34m/[m  
+[1;34m|[m[1;34m/[m[36m|[m [34m|[m [32m|[m   
+[1;34m|[m [36m|[m [34m|[m [32m|[m * [33mc3b3cbd[m[33m ([m[1;31morigin/revert-3-develope[m[33m)[m Revert "Develope"
+[1;34m|[m [36m|[m [34m|[m [32m|[m[32m/[m  
+[1;34m|[m [36m|[m [34m|[m * [33m9554264[m Merge pull request #3 from academy-react-winder402/develope
+[1;34m|[m [36m|[m [34m|[m[36m/[m[34m|[m 
+[1;34m|[m [36m|[m[36m/[m[34m|[m[34m/[m  
+[1;34m|[m [36m|[m [34m|[m * [33m96433f6[m[33m ([m[1;31morigin/develope[m[33m)[m sss
+[1;34m|[m [36m|[m [34m|[m[34m/[m  
+[1;34m|[m [36m|[m * [33me2622fa[m header edit
+[1;34m|[m [36m|[m * [33mb13b52f[m[33m ([m[1;31morigin/Corces/Amir[m[33m)[m course detail video
+[1;34m|[m [36m|[m * [33m1e7b251[m ffff
+[1;34m|[m [36m|[m * [33m5d18c5c[m edit
+[1;34m|[m [36m|[m * [33mdcaa2e2[m login1
+[1;34m|[m [36m|[m * [33m4362f7a[m landing
+[1;34m|[m [36m|[m * [33ma1a5e2b[m MiniS
+[1;34m|[m [36m|[m * [33m465ac86[m MiniSlider1
+[1;34m|[m [36m|[m * [33m1909ab4[m MiniSlider
+[1;34m|[m [36m|[m * [33mdd43889[m images
+[1;34m|[m [36m|[m * [33m48f934c[m lastProduct
+[1;34m|[m [36m|[m * [33m66b8aeb[m hpduct
+[1;34m|[m [36m|[m * [33m145c10e[m dfg
+[1;34m|[m [36m|[m * [33m11dfed2[m produ
+[1;34m|[m [36m|[m * [33m84593a6[m product1
+[1;34m|[m [36m|[m * [33ma259927[m Product
+[1;34m|[m [36m|[m * [33me035e04[m screens1
+[1;34m|[m [36m|[m * [33m3b84a9c[m header
+[1;34m|[m [36m|[m[36m/[m  
+[1;34m|[m * [33m3bbd6fb[m[33m ([m[1;31morigin/Amir/Header[m[33m, [m[1;32mAmir/Header[m[33m)[m simple header
+[1;34m|[m[1;34m/[m  
+* [33me513334[m install react
+* [33m3f6f130[m Initial commit

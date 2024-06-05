@@ -16,23 +16,106 @@ const Services = () => {
 
     return ( 
         <div>
-            <div className="mb-[50px]">
-                <h2 className="text-center mb-[10px] text-3xl font-bold"> خدمات ما </h2>
-                <p className="text-center"> لورک ایپسوم متن ساختگی با تولید ساختگی </p>
+            <div className="block sm:hidden mt-[70px]">
+                <div className="mb-[50px]">
+                    <h2 className="text-center mb-[10px] text-xl font-bold"> خدمات ما </h2>
+                    <p className="text-center text-[16px]"> لورک ایپسوم متن ساختگی با تولید ساختگی </p>
+                </div>
+                <div className="flex flex-wrap justify-center gap-[50px] w-[80%] mx-auto">
+                    {servis.map((item) => {
+                        return(
+                            <div className="">
+                                <img className="w-[140px] h-[140px] mx-auto" src={item.src}/>
+                                <h2 className="text-[16px] text-center mb-[10px]"> {item.fName} </h2>
+                                <p className="text-center text-sm"> {item.lName} </p>
+                                <p className="text-center text-sm"> {item.lName1} </p>
+                                <p className="text-center text-sm"> {item.lName2} </p>
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
-            <div className="flex gap-[70px] w-[750px] h-[320px] mx-auto">
-                {servis.map((item) => {
-                    return(
-                        <div className="mx-auto">
-                            <img className="w-[120px] h-[120px] mb-[20px]" src={item.src}/>
-                            <h2 className="text-lg text-center mb-[20px]"> {item.fName} </h2>
-                            <p className="text-center"> {item.lName} </p>
-                            <p className="text-center"> {item.lName1} </p>
-                            <p className="text-center"> {item.lName2} </p>
-                        </div>
-                    )
-                })}
+
+            <div className='hidden sm:block md:hidden mt-[70px]'>
+                <div className="mb-[50px]">
+                    <h2 className="text-center mb-[10px] text-xl font-bold"> خدمات ما </h2>
+                    <p className="text-center text-[16px]"> لورک ایپسوم متن ساختگی با تولید ساختگی </p>
+                </div>
+                <div className="flex flex-wrap justify-center gap-[50px] w-[600px] mx-auto">
+                    {servis.map((item) => {
+                        return(
+                            <div className="">
+                                <img className="w-[80px] h-[80px] mx-auto" src={item.src}/>
+                                <h2 className="text-[16px] text-center mb-[10px]"> {item.fName} </h2>
+                                <p className="text-center text-sm"> {item.lName} </p>
+                                <p className="text-center text-sm"> {item.lName1} </p>
+                                <p className="text-center text-sm"> {item.lName2} </p>
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
+
+            <div className='hidden md:block lg:hidden mt-[70px]'>
+                <div className="mb-[50px]">
+                    <h2 className="text-center mb-[10px] text-2xl font-bold"> خدمات ما </h2>
+                    <p className="text-center text-[16px]"> لورک ایپسوم متن ساختگی با تولید ساختگی </p>
+                </div>
+                <div className="flex flex-wrap gap-[15px] w-[700px] mx-auto">
+                    {servis.map((item) => {
+                        return(
+                            <div className="mx-auto">
+                                <img className="w-[80px] h-[80px] mx-auto" src={item.src}/>
+                                <h2 className="text-[16px] text-center mb-[10px]"> {item.fName} </h2>
+                                <p className="text-center text-sm"> {item.lName} </p>
+                                <p className="text-center text-sm"> {item.lName1} </p>
+                                <p className="text-center text-sm"> {item.lName2} </p>
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
+
+            <div className='hidden lg:block xl:hidden'>
+                <div className="mb-[50px]">
+                    <h2 className="text-center mb-[10px] text-3xl font-bold"> خدمات ما </h2>
+                    <p className="text-center"> لورک ایپسوم متن ساختگی با تولید ساختگی </p>
+                </div>
+                <div className="flex gap-[70px] w-[750px] h-[320px] mx-auto">
+                    {servis.map((item) => {
+                        return(
+                            <div className="mx-auto">
+                                <img className="w-[120px] h-[120px] mb-[20px]" src={item.src}/>
+                                <h2 className="text-lg text-center mb-[20px]"> {item.fName} </h2>
+                                <p className="text-center"> {item.lName} </p>
+                                <p className="text-center"> {item.lName1} </p>
+                                <p className="text-center"> {item.lName2} </p>
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
+
+            <div className='hidden xl:block'>
+                <div className="mb-[50px]">
+                    <h2 className="text-center mb-[10px] text-3xl font-bold"> خدمات ما </h2>
+                    <p className="text-center"> لورک ایپسوم متن ساختگی با تولید ساختگی </p>
+                </div>
+                <div className="flex gap-[70px] w-[750px] h-[320px] mx-auto">
+                    {servis.map((item) => {
+                        return(
+                            <div className="mx-auto">
+                                <img className="w-[120px] h-[120px] mb-[20px]" src={item.src}/>
+                                <h2 className="text-lg text-center mb-[20px]"> {item.fName} </h2>
+                                <p className="text-center"> {item.lName} </p>
+                                <p className="text-center"> {item.lName1} </p>
+                                <p className="text-center"> {item.lName2} </p>
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
+
         </div>
      );
 }
