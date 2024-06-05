@@ -44,7 +44,7 @@ const DPanel = () => {
                 <img className="mt-[15px] mr-[20px] w-7 h-7" src={home} alt="" />
               </NavLink>
               <img
-                className="w-[150px] h-[150px] mx-auto mt-[30px]"
+                className="w-[150px] h-[150px] mx-auto mt-[30px] rounded-full"
                 src={profileAks}
                 alt="Profile"
               />

@@ -3,7 +3,6 @@ import Product from "../landingComponent/products/product";
 import EndLeft from "./left/EndLeft/endLeft";
 import FirstLeft from "./left/fistLeft/firstLeft";
 import Left from "./left/left";
-import FirstRight from "./right/firstRight/firstRight";
 import Nazarat from "./right/nazarat/nazarat";
 import RightToz from "./right/rightToz";
 import Slide from "./right/slid2/slid2";
@@ -23,7 +22,7 @@ const CoursesList = () => {
 
   const getCoursComment =async () => {
     const res =await http.get(`/Course/GetCourseCommnets/${params.id}`)
-    console.log(res);
+    // console.log(res);
     return res
   }
 
@@ -45,7 +44,6 @@ const CoursesList = () => {
           techs={data?.techs}
           uniqeUrlString={data?.uniqeUrlString} 
         />
-        <FirstRight />
         <div className="flex flex-wrap justify-between gap-[10px] mx-[5%]">
           <div>
               <Left />
@@ -74,7 +72,6 @@ const CoursesList = () => {
           techs={data?.techs}
           uniqeUrlString={data?.uniqeUrlString} 
         />
-        <FirstRight />
         <div className="flex flex-wrap justify-center gap-[15px]">
             <Left />
             <FirstLeft
@@ -102,7 +99,6 @@ const CoursesList = () => {
               techs={data?.techs}
               uniqeUrlString={data?.uniqeUrlString}                 
             />
-            <FirstRight />
           </div>
           <div className="w-[25%]">
             <Left />
@@ -116,7 +112,10 @@ const CoursesList = () => {
         </div>
         <div className="mt-36">
           <Slide />
-          <Nazarat />
+          <Nazarat
+            title={data2?.title}
+            Describe={data2?.Describe}
+          />
         </div>
       </div>
     </div>

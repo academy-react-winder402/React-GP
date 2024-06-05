@@ -1,6 +1,6 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import aks from "../../../../public/PanelDaneshJoo/Mask Group 60.png";
+import profileAks from "../../../../public/PanelDaneshJoo/Mask Group 60.png";
 import zangoole from '../../../../public/PanelDaneshJoo/icons8-bell-50.png';
 import sabad from '../../../../public/PanelDaneshJoo/icons8-cart-64.png';
 import tasvir from '../../../../public/PanelDaneshJoo/icons8-down-100.png';
@@ -25,7 +25,7 @@ const Dashboard2 = () => {
                     <img className='w-8 h-7' src={sabad} alt="cart" />
                 </div>
             </div>
-            <img src={aks} className="h-30 mx-auto mt-10" alt="Profile" />
+            <img src={profileAks} className="h-30 mx-auto mt-10 rounded-full" alt="Profile" />
             <Formik
                 initialValues={{
                     firstName: '',
@@ -37,7 +37,7 @@ const Dashboard2 = () => {
                 }}
                 validationSchema={validationSchema}
                 onSubmit={(values) => {
-                    console.log(values);
+                    // console.log(values);
                 }}
             >
                 {({ isSubmitting }) => (

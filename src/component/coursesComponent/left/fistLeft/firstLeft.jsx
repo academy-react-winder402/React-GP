@@ -1,4 +1,4 @@
-const FirstLeft = ({cost , courseLevelName , classRoomName , endTime}) => {
+const FirstLeft = ({cost , courseLevelName , endTime}) => {
     
     return (
         <div>

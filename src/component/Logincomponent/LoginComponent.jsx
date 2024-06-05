@@ -373,7 +373,7 @@ const LoginComponent = () => {
                     <Form className="flex flex-col items-center gap-[16px]">
                       <div className="w-[60%]">
                         <p className="text-[14px] font-normal text-right text-white mb-[14px]">
-                          نام کاربری و رمز عبور خود را وارد کنید
+                          نام کاربری یا شماره و رمز عبور خود را وارد کنید
                         </p>
                         <Field
                           name="phoneOrGmail"

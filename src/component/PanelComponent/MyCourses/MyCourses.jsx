@@ -9,6 +9,7 @@ import dilit from '../../../../public/PanelDaneshJoo/icons8-trash-128.png'
 import back from '../../../../public/PanelDaneshJoo/icons8-down-100.png'
 import left from '../../../../public/angle-left-b 3.png'
 import right from '../../../../public/angle-right-b 3.png'
+import http from '../../../core/services/interceptore'
 
 
 const MyCourses = () => {
@@ -19,6 +20,13 @@ const MyCourses = () => {
         { src:aks, nameDore:"ری اکت", ostadName:"نام مدرس دوره", tarikh:"1402/07/09", pir:"250000" },
         { src:aks, nameDore:"ری اکت", ostadName:"نام مدرس دوره", tarikh:"1402/07/09", pir:"250000" }
       ]);
+
+    //   const getCoursReserve = async () => {
+    //     const res = await http.get('/CourseReserve/ReserveAdd')
+    //     return res
+    // }
+
+    //     const {data} = useQuery('courseReserve' , getCoursReserve)
 
   return (
     <>

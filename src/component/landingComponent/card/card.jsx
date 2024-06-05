@@ -86,10 +86,10 @@ const Card = () => {
 
             <div className='hidden xl:block'>
                 <div className="text-3xl font-bold text-center mt-[50px] mb-[150px]"> اساتید دوره </div>
-                <div className="mx-auto w-[1020px] justify-center mt-[50px] flex gap-[30px] mb-[150px]">
+                <div className="mx-auto w-[1000px] justify-between mt-[50px] flex flex-wrap mb-[150px]">
                     {data?.map((item) => {
                         return(
-                            <div className="shadow-[0px_0px_7px_2px_rgba(0,0,0,0.2)] py-[20px] rounded-3xl w-[310px]">
+                            <div className="shadow-[0px_0px_7px_2px_rgba(0,0,0,0.2)] py-[20px] mb-[100px] rounded-3xl w-[30%]">
                                 <img className="mb-[40px] mt-[-80px] w-[130px] h-[130px] mx-auto rounded-full" src={item.pictureAddress}/>
                                 <h2 className="text-center"> {item.fullName} </h2>
                                 <NavLink to={item.linkdinProfileLink} className="flex justify-center"> Linkedin Account </NavLink>
