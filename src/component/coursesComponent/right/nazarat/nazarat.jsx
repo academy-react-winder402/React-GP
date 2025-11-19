@@ -15,7 +15,7 @@ const Nazarat = ({title , Describe}) => {
 
 
 
-            <div className='block md:hidden'>
+            {/* <div className='block md:hidden'>
                 <div className="mt-[25px] w-[90%] py-10 px-10 mb-[200px]">
                     <h2 className="text-2xl font-bold mb-10" > نظرات </h2>
                     {text.map((item) => {
@@ -30,10 +30,10 @@ const Nazarat = ({title , Describe}) => {
                                         <p className="w-[90%]"> {item.toz} </p>
                                     </div>
                                 </div>
-                            )
+                            ) yper
                         })}
                 </div>
-            </div>
+            </div> */}
 
             <div className='hidden md:block'>
                 <div className="mt-[25px] w-[90%] py-10 px-10 mb-[200px]">
