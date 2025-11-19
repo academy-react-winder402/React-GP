@@ -44,7 +44,7 @@ MUI (Material UI)
 Styled Components
 
 @emotion/react
- & @emotion/styled
+& @emotion/styled
 
 Tailwind CSS
 
@@ -71,9 +71,10 @@ ESLint + React + React Hooks + React Refresh plugins
 PostCSS + Autoprefixer
 
 📦 Getting Started
+
 1. Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
 
 2. Install dependencies
 
@@ -81,23 +82,20 @@ Using npm:
 
 npm install
 
-
 (or use yarn / pnpm if you prefer.)
 
 3. Run the development server
-npm run dev
-
+   npm run dev
 
 Vite will start the app (by default at http://localhost:5173/).
 
 4. Build for production
-npm run build
-
+   npm run build
 
 The optimized production build will be generated in the dist folder.
 
 5. Preview the production build
-npm run preview
+   npm run preview
 
 📁 Project Scripts
 
